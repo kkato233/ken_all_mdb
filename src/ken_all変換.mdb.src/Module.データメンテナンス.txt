@@ -1,0 +1,11 @@
+Option Compare Database
+
+Public Sub 郵便番号関連データ削除()
+    DoCmd.SetWarnings False
+    DoCmd.RunSQL "delete from U_番号"
+    DoCmd.RunSQL "delete from U_企業"
+    DoCmd.RunSQL "delete from U_Sub"
+    DoCmd.RunSQL "delete from U7_県対応表"
+   
+    DoCmd.SetWarnings True
+End Sub

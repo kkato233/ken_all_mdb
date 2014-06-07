@@ -1,0 +1,317 @@
+' 2006.10.11 非公開関数 SaveAsText を使ってプログラムを保存する。
+' MDBファイルでも ADP ファイルでも動作する。
+' この機能を使って保管したテキストファイルは ファイルインポート関数を使ってインポート可能
+' 2006.10.18 プログラム保存で MDB と ADP の場合の動作を変更
+'            Queryのインポートをできるように機能追加
+' 2006.10.22 テーブルとクエリーの出力対応
+'            Microsoft ADO Ext. 2.8 for DDL and Security への参照設定が必要 （環境によっては 2.7。Vistaでは 6.0)
+' 2007.11.25 ADODB.Connection が コンパイルエラーになる場合は Microsoft ActiveX Data Objects 2.8 Library への参照設定が必要（バージョン番号はその環境の最新にしてください。)
+
+Option Compare Database
+Option Explicit
+
+Private Sub プログラム保存()
+    Dim n As Integer
+    Dim i As Integer
+    Dim Name As String
+    Dim fileName As String
+    Dim path As String
+    Dim pos As Integer
+    Dim mode As String
+    
+    On Error Resume Next
+    
+    path = CurrentDb.Name
+    mode = "mdb"
+    If (path = "") Then
+        path = CurrentProject.FullName
+        mode = "adp"
+    End If
+    path = path & ".src\"
+    On Error GoTo 0
+    
+    CreateFolder (path)
+    
+    n = Application.CodeProject.AllModules.Count
+    For i = 0 To n - 1
+        Name = Application.CodeProject.AllModules(i).Name
+        fileName = path & Name & ".txt"
+        SaveAsText acOutputModule, Name, path & "Module." & Name & ".txt"
+    Next
+
+    n = Application.CodeProject.AllForms.Count
+    
+    For i = 0 To n - 1
+        Name = Application.CodeProject.AllForms(i).Name
+        fileName = path & "Form_" & Name & ".txt"
+        SaveAsText acForm, Name, fileName
+    Next
+    
+    n = Application.CodeProject.AllReports.Count
+    For i = 0 To n - 1
+        Name = Application.CodeProject.AllReports(i).Name
+        fileName = path & "Report_" & Name & ".txt"
+        SaveAsText acReport, Name, fileName
+    Next
+    
+    n = Application.CodeProject.AllMacros.Count
+    For i = 0 To n - 1
+        Name = Application.CodeProject.AllMacros(i).Name
+        fileName = path & "Macro_" & Name & ".txt"
+        SaveAsText acMacro, Name, fileName
+    Next
+    
+    ' Query
+    Dim obj
+    
+    If (mode = "mdb") Then
+        For Each obj In Application.CodeData.AllQueries
+            Name = obj.Name
+            fileName = path & "Query." & Name + ".txt"
+            SaveAsText acQuery, Name, fileName
+        Next
+    End If
+    
+    'ADP 用
+    If (mode = "adp") Then
+        For Each obj In Application.CodeData.AllStoredProcedures
+            Name = obj.Name
+            fileName = path & "Stored." & Name + ".txt"
+            SaveAsText acStoredProcedure, Name, fileName
+        Next
+        For Each obj In Application.CodeData.AllFunctions
+            Name = obj.Name
+            fileName = path & "Function." & Name + ".txt"
+            SaveAsText acFunction, Name, fileName
+        Next
+        For Each obj In Application.CodeData.AllViews
+            Name = obj.Name
+            fileName = path & "View." & Name + ".txt"
+            SaveAsText acServerView, Name, fileName
+        Next
+        For Each obj In Application.CodeData.AllDatabaseDiagrams
+            Name = obj.Name
+            fileName = path & "Diagram." & Name + ".txt"
+            SaveAsText acDiagram, Name, fileName
+        Next
+    End If
+    
+    ' Table保存はデータまで保存しようとするのでダメ
+    'For Each obj In Application.CodeData.AllTables
+    '    name = obj.name
+    '    fileName = path & "Table." & name + ".txt"
+    '    SaveAsText 6, name, fileName
+    'Next
+
+    'NoIndex.txt を作成
+    WriteFlie path & "NoIndex.txt", ""
+    
+    テーブル一覧を出力 path
+    If (mode = "mdb") Then
+        クエリー一覧を出力 path
+    End If
+End Sub
+
+
+Private Sub クエリー一覧を出力(sourceOutputDir As String)
+    Dim adoCatalog As ADOX.Catalog
+    Dim dbRes As ADODB.Recordset
+    Dim dbFld As ADODB.Fields
+    Dim adoView As ADOX.View
+    Dim adoProc As ADOX.Procedure
+    Dim path As String
+    Dim fileName As String
+    Dim strFormat As String
+    Dim adoCmd As ADODB.Command
+    
+    Set adoCatalog = New ADOX.Catalog
+    Set adoCatalog.ActiveConnection = Application.CurrentProject.Connection
+    Set dbRes = New ADODB.Recordset
+    
+    path = sourceOutputDir
+    
+    ' クエリーの出力
+    For Each adoView In adoCatalog.Views
+        fileName = "View_" & adoView.Name
+        Set adoCmd = adoView.Command
+        strFormat = adoCmd.CommandText
+        WriteFlie path & fileName & ".txt", strFormat
+    Next
+    
+    '? ストアドプロシージャ？
+    For Each adoProc In adoCatalog.Procedures
+        fileName = "Proc_" & adoProc.Name
+        Set adoCmd = adoProc.Command
+        strFormat = adoCmd.CommandText
+    '    WriteFlie path & fileName & ".txt", strFormat
+    Next
+End Sub
+Private Sub テーブル一覧を出力(sourceOutputDir As String)
+    Dim adoTbl As ADOX.Table
+    Dim adoCatalog As ADOX.Catalog
+    Dim dbCon As ADODB.Connection
+    Dim fileName As String
+    Dim tableFormat As String
+    Dim dbRes As ADODB.Recordset
+    Dim adoCol As ADOX.Column
+    Dim adoIdx As ADOX.Index
+    Dim path As String
+    
+    Set adoCatalog = New ADOX.Catalog
+    Set adoCatalog.ActiveConnection = Application.CurrentProject.Connection
+    Set dbRes = New ADODB.Recordset
+    
+    path = sourceOutputDir
+    
+    For Each adoTbl In adoCatalog.Tables
+        tableFormat = ""
+        fileName = "Table_" + adoTbl.Name
+        If (adoTbl.Type <> "TABLE") Then
+            GoTo Next_Ok
+        End If
+        Dim IX As Integer
+        Dim IXMAX As Integer
+        Dim dbFld As ADODB.Fields
+        Dim strNAME As String
+        Dim strType As String
+        
+        ' フィールド情報(ADO)
+        On Error GoTo Next_Step
+        dbRes.Open adoTbl.Name, Application.CurrentProject.Connection, adOpenKeyset, adLockOptimistic, adCmdTable
+        IX = 0
+        Set dbFld = dbRes.Fields
+        IXMAX = dbFld.Count - 1
+        Do While IX <= IXMAX
+            tableFormat = tableFormat & dbFld(IX).Name
+            strType = ""
+            Select Case dbFld(IX).Type
+                Case 2:    strType = "adSmallInt"
+                Case 3:    strType = "adInteger"    ' 数値/AutoNumber
+                Case 4:    strType = "adSingle"
+                Case 5:    strType = "adDouble"
+                Case 6:    strType = "adCurrency"       ' 通貨
+                Case 7:    strType = "adDate"           ' 日付
+                Case 11:   strType = "adBoolean"        ' Yes/No
+                Case 12:   strType = "adVariant"
+                Case 14:   strType = "adDecimal"
+                Case 20:   strType = "adBigInt"
+                Case 64:   strType = "adFileTime"
+                Case 72:   strType = "adGUID"
+                Case 128:  strType = "adBinary"
+                Case 129:  strType = "adChar"
+                Case 130:  strType = "adWChar"
+                Case 131:  strType = "adNumeric"
+                Case 135:  strType = "adDBTimeStamp"
+                Case 200:  strType = "adVarChar"
+                Case 201:  strType = "adLongVarChar"
+                Case 202:  strType = "adVarWChar"       ' テキスト
+                Case 203:  strType = "adLongVarWChar"   ' メモ
+                Case 204:  strType = "adVarBinary"
+                Case 205:  strType = "adLongVarBinary"  ' OLEObject
+                Case Else: strType = dbFld(IX).Type
+            End Select
+            tableFormat = tableFormat & Chr(9) & strType
+            tableFormat = tableFormat & Chr(9) & dbFld(IX).DefinedSize
+            IX = IX + 1
+            tableFormat = tableFormat & Chr(13) & Chr(10)
+        Loop
+        dbRes.Close
+        ' 主キーがあるか判定
+        On Error Resume Next
+        strNAME = adoTbl.Keys(0).Columns(0).Name
+        If Err.Number = 0 Then
+            On Error GoTo 0
+            ' 主キー
+            For Each adoCol In adoTbl.Keys(0).Columns
+                tableFormat = tableFormat & Chr(13) & Chr(10) & Chr(9) & Chr(9) & adoCol.Name
+            Next adoCol
+        End If
+        On Error GoTo 0
+        ' インデックス
+        For Each adoIdx In adoTbl.Indexes
+            For Each adoCol In adoIdx.Columns
+                tableFormat = tableFormat & Chr(13) & Chr(10) & Chr(9) & Chr(9) & "Index" & Chr(9) & adoIdx.Name
+            Next adoCol
+        Next adoIdx
+        
+        'Debug.Print tableFormat
+        WriteFlie path & fileName & ".txt", tableFormat
+        GoTo Next_Ok
+Next_Step:
+        Resume Next_Ok
+Next_Ok:
+    Next
+End Sub
+
+Private Sub WriteFlie(fileName As String, writeData As String)
+
+    Open fileName For Output Access Write As #1
+    Print #1, writeData
+    Close #1
+End Sub
+
+Private Sub 名前一覧()
+    Dim n As Integer
+    Dim i As Integer
+    Dim Name As String
+    Dim pos As Integer
+    
+    
+    n = Application.CodeProject.AllModules.Count
+    For i = 0 To n - 1
+        Name = Application.CodeProject.AllModules(i).Name
+    Next
+
+    n = Application.CodeProject.AllForms.Count
+    
+    For i = 0 To n - 1
+        Name = "Form_" & Application.CodeProject.AllForms(i).Name
+        Debug.Print Name
+    Next
+End Sub
+
+'指定の名前でフォルダを作成する。
+Private Sub CreateFolder(pathname As String)
+    Dim fso
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    If Not fso.FolderExists(pathname) Then
+        fso.CreateFolder (pathname)
+    End If
+End Sub
+
+Public Sub ファイルインポート(path As String)
+    
+    Dim fileObject, pathObject, FileItem
+    Set fileObject = CreateObject("Scripting.FileSystemObject")
+    
+    If fileObject.FolderExists(path) Then
+        Set pathObject = fileObject.GetFolder(path)
+        Dim i As Integer
+        For Each FileItem In pathObject.Files
+            Debug.Print FileItem.Name
+            Dim fileName As String
+            fileName = FileItem.Name
+            Dim importName As String
+            
+            'ファイル名を解析してインポートする
+            If (Mid(fileName, 1, 7) = "Report_") Then
+                importName = Replace(Mid(fileName, 8), ".txt", "")
+                LoadFromText acReport, importName, path & "\\" & fileName
+            ElseIf (Mid(fileName, 1, 5) = "Form_") Then
+                importName = Replace(Mid(fileName, 6), ".txt", "")
+                LoadFromText acForm, importName, path & "\\" & fileName
+            ElseIf (Mid(fileName, 1, 6) = "Macro_") Then
+                importName = Replace(Mid(fileName, 7), ".txt", "")
+                LoadFromText acMacro, importName, path & "\\" & fileName
+            ElseIf (Mid(fileName, 1, 7) = "Module.") Then
+                importName = Replace(Mid(fileName, 8), ".txt", "")
+                LoadFromText acModule, importName, path & "\\" & fileName
+            ElseIf (Mid(fileName, 1, 6) = "Query.") Then
+                importName = Replace(Mid(fileName, 7), ".txt", "")
+                LoadFromText acQuery, importName, path & "\\" & fileName
+            End If
+            
+        Next
+    End If
+    
+End Sub

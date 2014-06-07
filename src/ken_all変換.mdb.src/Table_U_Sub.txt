@@ -1,0 +1,9 @@
+’nˆæ	adVarWChar	5
+KenR	adVarWChar	100
+ShiR	adVarWChar	100
+Œ§	adVarWChar	100
+Žs	adVarWChar	100
+
+		’nˆæ
+		Index	PrimaryKey
+		Index	’nˆæ

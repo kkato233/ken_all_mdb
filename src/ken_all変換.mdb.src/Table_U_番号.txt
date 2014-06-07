@@ -1,0 +1,19 @@
+地域	adVarWChar	5
+U5	adVarWChar	5
+U7	adVarWChar	7
+KenR	adVarWChar	100
+ShiR	adVarWChar	100
+町R	adVarWChar	80
+県	adVarWChar	100
+市	adVarWChar	100
+町	adVarWChar	74
+重複	17	1
+フィールド11	adInteger	4
+フィールド12	adInteger	4
+複数番号	adInteger	4
+フィールド14	adInteger	4
+フィールド15	adInteger	4
+
+		Index	U5
+		Index	U7
+		Index	地域

@@ -1,0 +1,15 @@
+地域	adVarWChar	5
+事業所名かな	adVarWChar	150
+事業所名	adVarWChar	160
+県	adVarWChar	255
+市	adVarWChar	255
+町	adVarWChar	24
+番地	adVarWChar	124
+U7	adVarWChar	7
+U5	adVarWChar	5
+取扱郵便局名	adVarWChar	255
+個別番号の種別	adInteger	4
+複数番号の有無	adInteger	4
+修正コード	adInteger	4
+
+		Index	U7

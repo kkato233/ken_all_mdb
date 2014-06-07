@@ -1,0 +1,6 @@
+U7	adVarWChar	7
+Œ§	adVarWChar	100
+’nˆæ	adVarWChar	255
+
+		U7
+		Index	PrimaryKey
