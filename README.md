@@ -25,7 +25,7 @@ Accessで標準で郵便番号を入力したら住所に変換する機能が�
 すると自動的に 住所１とふりがなが入ります。 
 
 
-![Alt text](/img/kenall1.png?raw=true "Optional Title")
+![Alt text](./img/kenall1.png?raw=true "Optional Title")
 
 # 住所を入力すると自動的に郵便番号まで入力される
 
