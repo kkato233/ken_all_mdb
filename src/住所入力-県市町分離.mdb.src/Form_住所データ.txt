@@ -1,6 +1,6 @@
 Version =19
 VersionRequired =19
-Checksum =1816514145
+Checksum =-1816426975
 Begin Form
     AutoCenter = NotDefault
     PictureTiling = NotDefault
@@ -12,11 +12,11 @@ Begin Form
     GridY =10
     Width =6293
     DatasheetFontHeight =9
-    ItemSuffix =23
-    Left =3255
-    Top =1380
-    Right =10560
-    Bottom =6585
+    ItemSuffix =26
+    Left =1875
+    Top =930
+    Right =8460
+    Bottom =4965
     DatasheetGridlinesColor =12632256
     PictureData = Begin
         0x0e00000000000000010000005800000000000000000000000204000059000000 ,
@@ -5870,22 +5870,22 @@ Begin Form
         0xc9047bd0d7534043b7fe29ac848b8ed3
     End
     NameMap = Begin
-        0x0acc0e55000000009bea9fad8ed58a4fb9f64974a084f68f00000000d836637c ,
+        0x0acc0e55000000009bea9fad8ed58a4fb9f64974a084f68f000000004cf14106 ,
         0xc4f7e44000000000000000004f4f4062c730fc30bf300000000000000f42b868 ,
         0x92a58d4ba7d7257d62963a96070000009bea9fad8ed58a4fb9f64974a084f68f ,
         0xf590bf4f6a75f7530000000000004aad9d3422038442809d863b408a8a950700 ,
-        0x00009bea9fad8ed58a4fb9f64974a084f68f4f4f406211ff000000000000f2b5 ,
-        0x66152cb31949a59e823e180e0337070000009bea9fad8ed58a4fb9f64974a084 ,
-        0xf68f4f4f406212ff00000000000058ec94f51bb8a44b9efcc00e411d6b6d0700 ,
-        0x00009bea9fad8ed58a4fb9f64974a084f68f0f6c0d54000000000000193f10bb ,
-        0xb2dff74ab6643cdeda094a80070000009bea9fad8ed58a4fb9f64974a084f68f ,
-        0xfb96718a6a75f7530000000000004896744ffafa544ebae776a5fc16934c0700 ,
-        0x00009bea9fad8ed58a4fb9f64974a084f68f5830853046305730873011ff0000 ,
-        0x0000000016cf6086564a034ba01b49137b9144f1070000009bea9fad8ed58a4f ,
-        0xb9f64974a084f68f5830853046305730873012ff0000000000007d49f3607965 ,
-        0xa64fa90189e9e333fa78070000009bea9fad8ed58a4fb9f64974a084f68fab30 ,
-        0xb930bf30de30fc30d030fc30b330fc30c9300000000000000000000000000000 ,
-        0x00000000000000000c000000050000000000000000000000000000000000
+        0x00009bea9fad8ed58a4fb9f64974a084f68ffd9053909c5e0c77000000000000 ,
+        0xf2b566152cb31949a59e823e180e0337070000009bea9fad8ed58a4fb9f64974 ,
+        0xa084f68f025e3a533a75516700000000000058ec94f51bb8a44b9efcc00e411d ,
+        0x6b6d070000009bea9fad8ed58a4fb9f64974a084f68f0f6c0d54000000000000 ,
+        0x193f10bbb2dff74ab6643cdeda094a80070000009bea9fad8ed58a4fb9f64974 ,
+        0xa084f68ffb96718a6a75f753000000000000c07706d79963694b8b499e6f8823 ,
+        0x6b9b070000009bea9fad8ed58a4fb9f64974a084f68f3a750d54000000000000 ,
+        0xe8312a3566c4a84f93f85eaf7d26729c070000009bea9fad8ed58a4fb9f64974 ,
+        0xa084f68f6a753057000000000000353730dc0b048040a1385874f2dc06110700 ,
+        0x00009bea9fad8ed58a4fb9f64974a084f68fd030fc30b330fc30c93000000000 ,
+        0x0000000000000000000000000000000000000c00000005000000000000000000 ,
+        0x0000000000000000
     End
     RecordSource ="住所データ"
     Caption ="住所データ"
@@ -5895,10 +5895,55 @@ Begin Form
         0xa3050000a1050000a1050000a105000000000000201c0000e010000001000000 ,
         0x010000006801000000000000a10700000100000001000000
     End
+    PrtDevMode = Begin
+        0x000000001808ef00180000001808ef0000000000908fe8171077ec17c401ef00 ,
+        0x010403069c00b0040f9b8007010009009a0b3408640001000700580202000100 ,
+        0x5802030000004134004e2e01ea2ee27710000000000000003c502e0100005001 ,
+        0x1800000003000000000000000000000000000000010000000000000001000000 ,
+        0x0200000003010000ffffffff4749533400000000000000000000000044494e55 ,
+        0x2200380294041c00105a71740000000000000000000000000000000000000000 ,
+        0x0000000000000000140000000100000000000100000000000000000000000100 ,
+        0x0100010000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000100000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000038020000534d544a ,
+        0x00000000100028027b00360036004300430036003800460034002d0035003200 ,
+        0x420045002d0034003800310039002d0039004100410031002d00390039004400 ,
+        0x3400420039003300390037003600390045007d000000496e70757442696e0054 ,
+        0x7261793100524553444c4c00556e69726573444c4c004d656469615479706500 ,
+        0x506c61696e00506170657253697a65004c4554544552004f7269656e74617469 ,
+        0x6f6e00504f525452414954004475706c6578004e4f4e4500436f6c6f724d6f64 ,
+        0x6500436f6c6f720050616765436f6c6f724d6f6465004e6f726d616c00506167 ,
+        0x65437573746f6d48616c66746f6e6500446966667573696f6e005265736f6c75 ,
+        0x74696f6e004f7074696f6e32005072696e745175616c697479004e6f726d616c ,
+        0x005061676542696469725072696e74004f6e00436f6c6c617465004f46460052 ,
+        0x6576657273654f72646572004f6666004a6f624e5570416c6c446f63756d656e ,
+        0x7473436f6e746967756f75736c790031004a6f6250726573656e746174696f6e ,
+        0x446972656374696f6e005269676874426f74746f6d00506167654272506f7374 ,
+        0x6572004e6f726d616c0050616765427257617465726d61726b004e6f6e65004d ,
+        0x6972726f72004f6666005061676552657665727365496d616765004f66660000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000001c0000005634444d0100000000000000 ,
+        0x000000000000000000000000
+    End
     PrtDevNames = Begin
-        0x08001800330001004550534f4e20504d2d343030305058005c5c7473315cefbf ,
-        0xbdefbfbdefbfbd4f41efbfbdefbfbdefbfbd5befbfbdefbfbdefbfbd40504d2d ,
-        0x34303000555342303032000000000000
+        0x0800260040000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x3139322e3136382e322e3130300000000000
     End
     OnActivate ="[Event Procedure]"
     NoSaveCTIWhenDisabled =1
@@ -6052,7 +6097,7 @@ Begin Form
             End
         End
         Begin Section
-            Height =3798
+            Height =4025
             BackColor =-2147483633
             Name ="詳細"
             GUID = Begin
@@ -6060,7 +6105,7 @@ Begin Form
             End
             Begin
                 Begin TextBox
-                    OverlapFlags =95
+                    OverlapFlags =87
                     IMEMode =2
                     Left =1917
                     Top =114
@@ -6091,17 +6136,16 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =95
+                    OverlapFlags =87
                     IMEMode =1
                     Left =1916
-                    Top =737
+                    Top =566
                     Width =4035
                     Height =285
                     ColumnWidth =2340
                     TabIndex =1
-                    Name ="住所１"
-                    ControlSource ="住所１"
-                    AfterUpdate ="[Event Procedure]"
+                    Name ="都道府県"
+                    ControlSource ="都道府県"
                     GUID = Begin
                         0x69d2f8b482f8484d9a09c268320aba64
                     End
@@ -6109,11 +6153,11 @@ Begin Form
                         Begin Label
                             OverlapFlags =93
                             Left =56
-                            Top =737
+                            Top =566
                             Width =1860
                             Height =255
                             Name ="住所１_ラベル"
-                            Caption ="住所１"
+                            Caption ="都道府県"
                             GUID = Begin
                                 0x346e6040ce5d42458799de5bc0d26985
                             End
@@ -6121,17 +6165,16 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =95
+                    OverlapFlags =87
                     IMEMode =1
                     Left =1916
-                    Top =1417
+                    Top =963
                     Width =4035
                     Height =285
                     ColumnWidth =2340
-                    TabIndex =3
-                    Name ="住所２"
-                    ControlSource ="住所２"
-                    AfterUpdate ="[Event Procedure]"
+                    TabIndex =2
+                    Name ="市区町村"
+                    ControlSource ="市区町村"
                     FuriganaControl ="じゅうしょ２"
                     GUID = Begin
                         0xd9f0decff831b845a47d1f64a3dbdfb0
@@ -6140,11 +6183,11 @@ Begin Form
                         Begin Label
                             OverlapFlags =93
                             Left =56
-                            Top =1417
+                            Top =963
                             Width =1860
                             Height =255
                             Name ="住所２_ラベル"
-                            Caption ="住所２"
+                            Caption ="市区町村"
                             GUID = Begin
                                 0x6b0503a1a6e74348ba1d1920610952b5
                             End
@@ -6152,10 +6195,10 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =87
+                    OverlapFlags =85
                     IMEMode =1
-                    Left =1860
-                    Top =1814
+                    Left =1916
+                    Top =2211
                     Width =2340
                     Height =285
                     ColumnWidth =2340
@@ -6167,9 +6210,10 @@ Begin Form
                     End
                     Begin
                         Begin Label
-                            OverlapFlags =93
-                            Top =1814
-                            Width =1860
+                            OverlapFlags =85
+                            Left =56
+                            Top =2211
+                            Width =1740
                             Height =255
                             Name ="氏名_ラベル"
                             Caption ="氏名"
@@ -6180,10 +6224,10 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =87
+                    OverlapFlags =85
                     IMEMode =2
-                    Left =1860
-                    Top =2213
+                    Left =1916
+                    Top =2610
                     Width =2340
                     Height =285
                     ColumnWidth =2340
@@ -6195,9 +6239,10 @@ Begin Form
                     End
                     Begin
                         Begin Label
-                            OverlapFlags =93
-                            Top =2213
-                            Width =1860
+                            OverlapFlags =85
+                            Left =56
+                            Top =2610
+                            Width =1740
                             Height =255
                             Name ="電話番号_ラベル"
                             Caption ="電話番号"
@@ -6208,57 +6253,88 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =87
-                    IMEMode =4
-                    Left =1927
-                    Top =453
-                    Width =4026
+                    OverlapFlags =85
+                    IMEMode =1
+                    Left =1925
+                    Top =1360
+                    Width =4071
                     Height =285
-                    TabIndex =2
-                    Name ="じゅうしょ１"
-                    ControlSource ="じゅうしょ１"
+                    TabIndex =3
+                    Name ="町名"
+                    ControlSource ="町名"
+                    AfterUpdate ="[Event Procedure]"
                     GUID = Begin
-                        0x54b5925a5d16244384e83ad34964cff3
+                        0x9d6cf451d40858449f8f65c8a6149959
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =56
+                            Top =1361
+                            Width =780
+                            Height =240
+                            Name ="ラベル21"
+                            Caption ="町名:"
+                            GUID = Begin
+                                0x2a391d07bf30c649b670775f6efa708e
+                            End
+                        End
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =247
-                    IMEMode =4
-                    Left =1927
-                    Top =1190
-                    Width =4026
+                    OverlapFlags =85
+                    IMEMode =1
+                    Left =1926
+                    Top =1757
+                    Width =4041
+                    Height =285
                     TabIndex =4
-                    Name ="じゅうしょ２"
-                    ControlSource ="じゅうしょ２"
+                    Name ="番地"
+                    ControlSource ="番地"
+                    AfterUpdate ="[Event Procedure]"
                     GUID = Begin
-                        0x0797955e93098249b9d69ba4e0d474f1
+                        0xc44ad65046f7c047b7c8d4a79bca7b54
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =113
+                            Top =1757
+                            Width =780
+                            Height =240
+                            Name ="ラベル23"
+                            Caption ="番地:"
+                            GUID = Begin
+                                0x7fc8067f499e754c98d589d18497dbba
+                            End
+                        End
                     End
                 End
                 Begin TextBox
                     TabStop = NotDefault
-                    OverlapFlags =215
+                    OverlapFlags =85
                     IMEMode =1
-                    Left =1927
-                    Top =2664
-                    Width =2331
+                    Left =2324
+                    Top =3062
+                    Width =3351
                     Height =285
                     TabIndex =7
-                    Name ="カスタマーバーコード"
-                    ControlSource ="カスタマーバーコード"
+                    Name ="バーコード"
+                    ControlSource ="バーコード"
                     GUID = Begin
-                        0x02f93e194856ae40b121e5e3676b4c2c
+                        0x12dbe4efbd9af5419e06de511fd48a31
                     End
                     Begin
                         Begin Label
-                            OverlapFlags =93
-                            Left =226
-                            Top =2664
+                            OverlapFlags =85
+                            Left =56
+                            Top =3062
                             Width =1965
                             Height =240
-                            Name ="ラベル21"
+                            Name ="ラベル24"
                             Caption ="カスタマーバーコード:"
                             GUID = Begin
-                                0x7dc08d315b4f4f46a1f2ba430e66623b
+                                0x753e8939de9e224f9d03e2965b373431
                             End
                         End
                     End
@@ -6269,14 +6345,14 @@ Begin Form
                     SizeMode =1
                     OldBorderStyle =0
                     OverlapFlags =85
-                    Left =226
-                    Top =3061
+                    Left =56
+                    Top =3458
                     Width =4525
                     Height =421
                     AutoActivate =1
                     TabIndex =8
                     BorderColor =13553360
-                    Name ="BarCodeCtrl2"
+                    Name ="BarCodeCtrl5"
                     OleData = Begin
                         0x000e0000d0cf11e0a1b11ae1000000000000000000000000000000003e000300 ,
                         0xfeff090006000000000000000000000001000000020000000000000000100000 ,
@@ -6329,7 +6405,7 @@ Begin Form
                         0x0000000052006f006f007400200045006e007400720079000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x0000000016000500ffffffffffffffff01000000337034d91296d1119d7500c0 ,
-                        0x4fcc8cdc000000000000000000000000400335767305d30105000000c0000000 ,
+                        0x4fcc8cdc00000000000000000000000060d7609d6d05d30105000000c0000000 ,
                         0x0000000003004f006c0065004f0062006a006500630074004400610074006100 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
                         0x000000001e000201ffffffff02000000ffffffff000000000000000000000000 ,
@@ -6376,7 +6452,7 @@ Begin Form
                         0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ,
                         0xffffffff38000000000000000100000000000000000000000000000000000000 ,
                         0x0000000038000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000337034d91296d1119d7500c04fcc8cdc020200002d1f0000e6020000 ,
+                        0x00000000337034d91296d1119d7500c04fcc8cdc0202000022270000e6020000 ,
                         0x02000a0002000000020000000200030002000000030001000000080002000000 ,
                         0x00001300000000001300ffffff00000000000000000000000000000000000000 ,
                         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -6393,10 +6469,10 @@ Begin Form
                         0x0000000000000000
                     End
                     OLEClass ="Microsoft BarCode Control 16.0"
-                    ControlSource ="カスタマーバーコード"
+                    ControlSource ="バーコード"
                     Class ="BARCODE.BarCodeCtrl.1"
                     GUID = Begin
-                        0x26bd0bfe03c0ed479af64d150db98efe
+                        0x68fcd9ce6ab07d4eb05a302ef08e6699
                     End
                 End
             End
@@ -6436,6 +6512,14 @@ Private Sub Form_Activate()
     コントロール名設定Sub Me
 End Sub
 
+Private Sub 町名_AfterUpdate()
+    カスタマーバーコード更新
+End Sub
+
+Private Sub 番地_AfterUpdate()
+    カスタマーバーコード更新
+End Sub
+
 Private Sub 郵便番号_AfterUpdate()
     郵便番号_AfterUpdate_処理
     カスタマーバーコード更新
@@ -6445,20 +6529,12 @@ Private Sub 郵便番号_Exit(Cancel As Integer)
     郵便番号_Exit_処理
 End Sub
 
-Private Sub 住所1_AfterUpdate()
-    カスタマーバーコード更新
-End Sub
-
-Private Sub 住所2_AfterUpdate()
-    カスタマーバーコード更新
-End Sub
-
 Private Sub カスタマーバーコード更新()
     Dim j As String
     Dim barCode As String
     
-    j = Nz(Me.住所1, "") & " " & Nz(Me.住所2, "")
+    j = Nz(Me.都道府県, "") & " " & Nz(Me.市区町村, "") & " " & Nz(Me.町名, "") & " " & Nz(Me.番地, "")
     barCode = CreateCustomerBarCode(Nz(Me.郵便番号.Value, ""), j)
-    Me.カスタマーバーコード.Value = barCode
+    Me.バーコード.Value = barCode
     
 End Sub

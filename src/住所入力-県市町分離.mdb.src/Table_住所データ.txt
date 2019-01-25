@@ -1,16 +1,16 @@
 住所ID	adInteger	4
 郵便番号	adVarWChar	7
-住所１	adVarWChar	50
-住所２	adVarWChar	50
-じゅうしょ１	adVarWChar	50
-じゅうしょ２	adVarWChar	50
+都道府県	adVarWChar	50
+市区町村	adVarWChar	50
+町名	adVarWChar	255
+番地	adVarWChar	255
 氏名	adVarWChar	50
 電話番号	adVarWChar	50
-カスタマーバーコード	adVarWChar	50
+バーコード	adVarWChar	50
 
 		住所ID
 		Index	PrimaryKey
-		Index	コード
+		Index	バーコード
 		Index	住所ID
 		Index	電話番号
 		Index	郵便番号

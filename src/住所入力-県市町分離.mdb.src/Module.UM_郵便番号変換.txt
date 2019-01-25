@@ -1,0 +1,221 @@
+'2002.03.31 郵便番号の処理「複数番号」に対する処理が間違っていた
+'2017.07.24 「県」「市」「町」の場合に対応
+'
+Option Compare Database
+Option Explicit
+
+Public C_Uban As Control
+Public C_J1 As Control
+Public C_J2 As Control
+Public C_J3 As Control
+    
+Public Sub 郵便番号_AfterUpdate_処理()
+    If IsNull(C_Uban) Then
+        '住所から選択フォームを立ち上げる
+        住所から変換
+    Else
+        Select Case Len(C_Uban)
+        Case 1, 2, 4, 6
+            MsgBox "郵便番号の桁数が間違っています。"
+            Exit Sub
+        Case 3, 5, 7 '5桁の郵便番号から選択する
+            郵便番号から変換
+        Case 0 '住所から変換するプログラムを実行
+            住所から変換
+        End Select
+    End If
+End Sub
+
+Public Sub 郵便番号_Exit_処理()
+    If IsNull(C_Uban) Then
+        住所から変換
+    End If
+End Sub
+
+Public Sub コントロール名設定Sub(MyFrm)
+'◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆
+'◆ここでフォーム名コントロール名を組み込むフォームに合わて書き換える事
+    Set C_Uban = MyFrm("郵便番号")
+    Set C_J1 = MyFrm("都道府県")
+    Set C_J2 = MyFrm("市区町村")
+    Set C_J3 = MyFrm("町名")
+
+'◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆
+End Sub
+
+Public Function C_UBIN() As String
+    On Error Resume Next
+    C_UBIN = C_Uban
+    If Err > 0 Then
+        MsgBox "住所記入フォームから操作してください！"
+        'DoCmd.Close
+    End If
+    On Error GoTo 0
+End Function
+
+
+Public Sub オブジェクト変数の開放Sub()
+    Set C_Uban = Nothing
+    Set C_J1 = Nothing
+    Set C_J2 = Nothing
+    Set C_J3 = Nothing
+End Sub
+
+Public Sub 住所から変換()
+   
+    DoCmd.OpenForm "UP_住所から変換", windowmode:=acDialog
+End Sub
+
+Public Sub 住所から変換の終了()
+    DoCmd.Close acForm, "UP_住所から変換"
+    '今回はフォームを開けたり閉めたりしていますがあまりに遅い時には
+    'フォームを表示非表示にするようにプログラムを変更すれば良いかと思います。
+End Sub
+
+Public Sub 郵便番号から変換()
+    Dim db As Database
+    Dim 住所 As String, i As Integer
+    Dim myrs As Recordset, rs2 As Recordset
+    Dim myrs_open As Boolean, rs2_open As Boolean
+    Dim KenR As String, ShiR As String, MachiR As String, JyuR As String
+    myrs_open = False
+    rs2_open = False
+    
+    Set db = CurrentDb
+'2003.06.24 Access2000のパラメータクエリーの改造
+    Dim strSQL As String
+    Dim strYubin As String
+    strYubin = C_Uban
+    strSQL = "select * from U_番号 where U5 = " & Chr(34) & strYubin & Chr(34) & " or U7 = " & Chr(34) & strYubin & Chr(34)
+'    Set myrs = db.OpenRecordset("UQ_変換番号", dbOpenDynaset)
+    Set myrs = CurrentDb.OpenRecordset(strSQL, dbOpenDynaset)
+    myrs_open = True
+    
+    '7桁重複なし
+    With myrs
+        If .EOF And .BOF Then GoTo 大口企業番号のチェック
+        If Len(C_Uban) = 7 And !複数番号 = 0 Then '2002.03.31 複数番号の処理の間違い修正
+            If Left(!町, 5) = "以下に掲載" Then ' 住所名が以下に掲載のない場合の時
+                '町の名前を入れない
+                If Left(!県, 2) = Left(!市, 2) Then       '県名と市名が同じなら市から表示
+                    住所 = !市
+                    JyuR = !ShiR
+                Else
+                    住所 = !県 & !市
+                    JyuR = !KenR & " " & !ShiR
+                End If
+            Else
+                If Left(!県, 2) = Left(!市, 2) Then       '県名と市名が同じなら市から表示
+                    住所 = !市 & !町
+                   JyuR = !ShiR & " " & !町R
+                Else
+                    住所 = !県 & !市 & !町
+                   JyuR = !KenR & " " & !ShiR & " " & !町R
+                End If
+            End If
+            'C_J1 = Left(住所, 18)                  '有れば書き込み
+            'C_J2 = ""                              'テーブルデザインで空文字列の許可を「はい」にしないとエラーになる
+            'C_F1 = Left(JyuR, 50)
+            'C_F2 = ""
+            C_J1 = !県
+            C_J2 = !市
+            C_J3 = !町
+            If Len(住所) > 18 Or InStr(住所, "）") Then GoTo 多文字数
+            GoTo 終了
+        End If
+    End With
+
+大口企業番号のチェック:
+'2003.06.24 Access2000のパラメータクエリーの改造
+    strYubin = C_Uban
+    strSQL = "select * from U_企業 where U7 = '" & strYubin & "'"
+'    Set rs2 = db.OpenRecordset("UQ_変換企業")
+    Set rs2 = db.OpenRecordset(strSQL, dbOpenDynaset)
+
+    rs2_open = True
+    With rs2
+        If .EOF And .BOF Then GoTo チェック5桁
+        If Left(!町, 5) = "以下に掲載" Then ' 住所名が以下に掲載のない場合の時
+            '町の名前を入れない
+            If Left(!県, 2) = Left(!市, 2) Then       '県名と市名が同じなら市から表示
+                住所 = !市
+            Else
+                住所 = !県 & !市
+            End If
+        Else
+            If Left(!県, 2) = Left(!市, 2) Then       '県名と市名が同じなら市から表示
+                住所 = !市 & !町
+            Else
+                住所 = !県 & !市 & !町
+            End If
+        End If
+        'C_J1 = Left(住所, 18)                  '有れば書き込み
+        'C_J2 = !番地 & !事業所名               'テーブルデザインで空文字列の許可を
+        'C_F1 = ""                             '「はい」にしないとエラーになる
+        'C_F2 = ""
+        C_J1 = !県
+        C_J2 = !市
+        C_J3 = !町
+        .Close
+        rs2_open = False
+        GoTo 終了
+    End With
+    
+    '5桁、7桁共番号簿になければ終了
+チェック5桁:
+    If myrs.EOF And myrs.BOF Then
+        MsgBox "該当する郵便番号は有りません。" _
+                & vbCrLf & "住所から捜して下さい。"
+        住所から変換
+        GoTo 終了
+    End If
+               
+    '5桁/ 7桁で18文字を超える住所・特定不能重複番号
+郵便番号から変換:
+    DoCmd.OpenForm "UP_番号から変換"
+    Forms![UP_番号から変換]![Uban] = C_Uban
+    DoCmd.SelectObject acForm, "UP_番号から変換", False
+' マイクロソフトのサポートのページより
+' http://www.microsoft.com/mscorp/worldwide/japan/support/kb/articles/j022/4/19.htm
+'[AC95] フォームを開くイベントによって漢字変換が無効になる
+'最終更新日: 96/03/11
+'文書番号: J022419
+SendKeys "{Enter}", False
+
+'    Forms![UP_番号から変換]!Town.SetFocus
+    GoTo 終了
+    
+多文字数:
+    Dim Add As String
+    MsgBox "町名の文字数が多すぎて住所欄に入りきらないので別表示します。"
+    DoCmd.Hourglass True
+    With myrs
+        If Left(!県, 2) = Left(!市, 2) Then       '県名と市名が同じなら市から表示
+            Add = !市
+            JyuR = !ShiR
+        Else
+            Add = !県 & !市
+            JyuR = !KenR & " " & !ShiR
+        End If
+        JyuR = JyuR & !町R
+        Do Until .EOF
+            Add = Add & !町
+            myrs.MoveNext
+        Loop
+    End With
+    DoCmd.Hourglass False
+
+    DoCmd.OpenForm "UP_長い住所"
+    Forms![UP_長い住所]![全住所] = Add
+    Forms![UP_長い住所]![JyuSho] = JyuR
+
+終了:
+    If myrs_open Then
+        myrs.Close
+    End If
+    If rs2_open Then
+        rs2.Close
+    End If
+    
+    db.Close
+End Sub
