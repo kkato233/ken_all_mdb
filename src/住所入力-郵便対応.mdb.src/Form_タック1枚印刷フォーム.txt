@@ -1,0 +1,510 @@
+Version =17
+VersionRequired =17
+Checksum =-99210094
+Begin Form
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularCharSet =128
+    TabularFamily =50
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7937
+    DatasheetFontHeight =9
+    ItemSuffix =42
+    Left =1620
+    Top =120
+    Right =9315
+    Bottom =4350
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xcc06c0fabba7e140
+    End
+    DatasheetFontName ="ＭＳ Ｐゴシック"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =128
+            FontSize =9
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin TextBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            TextFontCharSet =128
+            Width =2091
+            FontSize =9
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin Section
+            Height =4478
+            BackColor =-2147483633
+            Name ="詳細"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =566
+                    Top =623
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    Name ="コマンド7"
+                    Caption ="１"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =566
+                    Top =1254
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =1
+                    Name ="コマンド8"
+                    Caption ="３"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =566
+                    Top =1885
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =2
+                    Name ="コマンド9"
+                    Caption ="５"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =566
+                    Top =2516
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =3
+                    Name ="コマンド10"
+                    Caption ="７"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =566
+                    Top =3147
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =4
+                    Name ="コマンド11"
+                    Caption ="９"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =566
+                    Top =3778
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =5
+                    Name ="コマンド12"
+                    Caption ="１１"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =1814
+                    Top =623
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =6
+                    Name ="コマンド13"
+                    Caption ="２"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =1814
+                    Top =1254
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =7
+                    Name ="コマンド14"
+                    Caption ="４"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =1814
+                    Top =1885
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =8
+                    Name ="コマンド15"
+                    Caption ="６"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =1814
+                    Top =2516
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =9
+                    Name ="コマンド16"
+                    Caption ="８"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =1814
+                    Top =3147
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =10
+                    Name ="コマンド17"
+                    Caption ="１０"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    Left =1814
+                    Top =3778
+                    Width =1134
+                    Height =511
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =11
+                    Name ="コマンド18"
+                    Caption ="１２"
+                    OnClick ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =566
+                    Top =56
+                    Width =2730
+                    Height =375
+                    Name ="ラベル19"
+                    Caption ="タックシールを1枚だけ印刷します。\015\012印刷する場所を指定してください。"
+                End
+                Begin Rectangle
+                    SpecialEffect =3
+                    BackStyle =0
+                    OverlapFlags =93
+                    Left =3460
+                    Top =56
+                    Width =4081
+                    Height =1986
+                    Name ="ボックス20"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =4309
+                    Top =616
+                    Width =1701
+                    TabIndex =12
+                    Name ="郵便番号"
+                    InputMask ="\\〒000\\-9999;;_"
+                End
+                Begin TextBox
+                    OverlapFlags =223
+                    Left =4309
+                    Top =920
+                    Width =3006
+                    TabIndex =13
+                    Name ="住所1"
+                End
+                Begin TextBox
+                    OverlapFlags =223
+                    Left =4309
+                    Top =1160
+                    Width =3006
+                    TabIndex =14
+                    Name ="住所2"
+                End
+                Begin TextBox
+                    OverlapFlags =223
+                    Left =4309
+                    Top =1400
+                    Width =3006
+                    TabIndex =15
+                    Name ="住所3"
+                End
+                Begin TextBox
+                    OverlapFlags =223
+                    Left =4309
+                    Top =1640
+                    TabIndex =16
+                    Name ="氏名"
+                End
+                Begin Rectangle
+                    SpecialEffect =3
+                    BackStyle =0
+                    OverlapFlags =215
+                    Left =340
+                    Top =510
+                    Width =2891
+                    Height =3968
+                    Name ="ボックス29"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =4308
+                    Top =276
+                    Width =3051
+                    TabIndex =18
+                    Name ="テキスト"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =3458
+                    Top =623
+                    Width =795
+                    Height =195
+                    Name ="ラベル32"
+                    Caption ="郵便番号"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =3818
+                    Top =960
+                    Width =435
+                    Height =195
+                    Name ="ラベル33"
+                    Caption ="住所"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =3818
+                    Top =1650
+                    Width =435
+                    Height =195
+                    Name ="ラベル34"
+                    Caption ="氏名"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =3623
+                    Top =285
+                    Width =630
+                    Height =195
+                    Name ="ラベル35"
+                    Caption ="コメント"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    Left =6236
+                    Top =3401
+                    Width =576
+                    Height =576
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =19
+                    Name ="閉じる"
+                    Caption ="コマンド36"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888808888888 ,
+                        0x8888888888888888888888800888888888888888888888888888880308888888 ,
+                        0x8888888888888888888880330888888888888888888888888888033308888888 ,
+                        0x8888888888888888888033330888888888888888888888880003333300000000 ,
+                        0x0000888888888888880333330ffff0888888888888888888880333330ffff088 ,
+                        0x8888888888888888880333300ffff0888888888888888888880333330ffff088 ,
+                        0x8888488888888888880333330ffff0888884488888888888880333330ffff088 ,
+                        0x8844488888888888880333330ffff0888444444488888888880333330ffff088 ,
+                        0x4444444488888888880333330ffff0884444444488888888880333330ffff088 ,
+                        0x844444448888888888033330fffff08888444888888800008803330ffffff088 ,
+                        0x8884488888880fff880330fffffff0888888488888880fff88030ffffffff088 ,
+                        0x88888888888800008800fffffffff08888888888888888888800000000000088 ,
+                        0x888888888888888800000000000000000000000000000000
+                    End
+                    FontName ="ＭＳ Ｐゴシック"
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff00000000ff0000ffff00000000ff00ff00ff0000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="ﾌｫｰﾑを閉じる"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =6292
+                    Top =4081
+                    Width =540
+                    Height =195
+                    Name ="ラベル37"
+                    Caption ="閉じる"
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    OverlapFlags =215
+                    Left =6406
+                    Top =1637
+                    Width =921
+                    TabIndex =17
+                    Name ="敬称"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub コマンド10_Click()
+    印刷実行 7
+End Sub
+
+Private Sub コマンド11_Click()
+    印刷実行 9
+End Sub
+
+Private Sub コマンド12_Click()
+    印刷実行 11
+End Sub
+
+Private Sub コマンド13_Click()
+    印刷実行 2
+End Sub
+
+Private Sub コマンド14_Click()
+    印刷実行 4
+End Sub
+
+Private Sub コマンド15_Click()
+    印刷実行 6
+End Sub
+
+Private Sub コマンド16_Click()
+    印刷実行 8
+End Sub
+
+Private Sub コマンド17_Click()
+    印刷実行 10
+End Sub
+
+Private Sub コマンド18_Click()
+    印刷実行 12
+End Sub
+
+Private Sub コマンド7_Click()
+    印刷実行 1
+End Sub
+
+Private Sub コマンド8_Click()
+    印刷実行 3
+End Sub
+
+Private Sub コマンド9_Click()
+    印刷実行 5
+End Sub
+
+Private Sub 印刷実行(num As Integer)
+'num 番目にデータをコピーして印刷を行う
+Dim i As Integer
+Dim db As Database
+Dim rs As Recordset
+
+    Set db = CurrentDb
+    Set rs = db.OpenRecordset("1枚印刷用テーブル", dbOpenDynaset)
+    'データの初期化
+    rs.MoveFirst
+    Do Until rs.EOF
+        rs.Edit
+        rs![発送先氏名] = "  "
+        rs![発送先敬称] = "  "
+        rs![発送先郵便番号] = "  "
+        rs![発送先住所1] = "  "
+        rs![発送先住所2] = "  "
+        rs![発送先住所3] = ""
+        rs.Update
+        rs.MoveNext
+    Loop
+    '必要な場所にデータを書込む
+    rs.FindFirst "ID=" & num
+    If rs.NoMatch Then
+        MsgBox "内部のプログラムの異常です"
+    End If
+    rs.Edit
+    rs![発送先氏名] = Me![氏名]
+    rs![発送先敬称] = Me![敬称]
+    rs![発送先郵便番号] = "〒" & Left(Me![郵便番号], 3) & "-" & Mid(Me![郵便番号], 4, 4)
+    rs![発送先住所1] = Me![住所1]
+    rs![発送先住所2] = Me![住所2]
+    rs![発送先住所3] = Me![住所3]
+    
+    rs.Update
+    rs.Close
+    db.Close
+    DoCmd.OpenReport "ラベル1枚印刷", acPreview
+End Sub
+Private Sub 閉じる_Click()
+On Error GoTo Err_閉じる_Click
+
+
+    DoCmd.Close
+
+Exit_閉じる_Click:
+    Exit Sub
+
+Err_閉じる_Click:
+    MsgBox Err.Description
+    Resume Exit_閉じる_Click
+    
+End Sub

@@ -1,0 +1,828 @@
+Version =17
+VersionRequired =17
+Checksum =99685226
+Begin Form
+    DefaultView =0
+    TabularCharSet =128
+    TabularFamily =50
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5132
+    DatasheetFontHeight =9
+    ItemSuffix =21
+    Left =5445
+    Top =510
+    Right =10860
+    Bottom =7305
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xc575c73c47a6e140
+    End
+    RecordSource ="îNâÍèÛàÛç¸"
+    OnCurrent ="[Event Procedure]"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+    PrtMip = Begin
+        0x89050000890500008905000089050000000000000c140000931a000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x4550534f4e204d4a2d3530300000000000000000000000000000000000000000 ,
+        0x0004010494004000036600040100090000000000000001002001680101000100 ,
+        0x6801010000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000020000000000000000000000010040004d53554413034550 ,
+        0x534f4e204d4a2d35303000000000000000000000000000000000000000008400 ,
+        0x0000000000002501000000000000640000000000000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080011001e00010057494e53504f4f4c004550534f4e204d4a2d353030004c50 ,
+        0x54313a0000000000000000000000000000000000
+    End
+    OnLoad ="[Event Procedure]"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =128
+            FontSize =9
+            FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin CommandButton
+            TextFontCharSet =128
+            Width =1701
+            Height =390
+            FontSize =9
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            SpecialEffect =2
+            OldBorderStyle =0
+            TextFontCharSet =128
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            TextFontCharSet =128
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+        End
+        Begin Section
+            Height =6803
+            BackColor =16317178
+            Name ="è⁄ç◊"
+            Begin
+                Begin TextBox
+                    Vertical = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =4044
+                    Top =907
+                    Width =810
+                    Height =5502
+                    FontSize =14
+                    TabIndex =1
+                    Name ="tbound2"
+                    ControlSource ="èZèä1"
+                    OnEnter ="[Event Procedure]"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                    ControlTipText ="Åu-ÅvÇÕîºäp êîéöÇÕëSäpÇ©äøéöÇégópÇ∑ÇÈÇ∆å©âhÇ¶Ç™ÇÊÇ≠Ç»ÇËÇ‹Ç∑ÅB"
+                End
+                Begin TextBox
+                    Vertical = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =3571
+                    Top =1190
+                    Width =397
+                    Height =4423
+                    FontSize =14
+                    TabIndex =2
+                    Name ="tbound3"
+                    ControlSource ="èZèä2"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Vertical = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =2654
+                    Top =1667
+                    Width =567
+                    Height =3889
+                    FontSize =20
+                    TabIndex =3
+                    Name ="tbound5"
+                    ControlSource ="éÅñº"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Vertical = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =95
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =2654
+                    Top =5555
+                    Width =567
+                    Height =851
+                    FontSize =18
+                    TabIndex =6
+                    Name ="tbound6_Sub1"
+                    ControlSource ="åhèÃ"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    Vertical = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =1077
+                    Top =2547
+                    Width =305
+                    Height =3501
+                    TabIndex =7
+                    Name ="tbound8"
+                    ControlSource ="ç∑èoêlèZèä1"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    Vertical = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextAlign =2
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =170
+                    Top =3284
+                    Width =327
+                    Height =2775
+                    FontSize =12
+                    TabIndex =8
+                    Name ="tbound9"
+                    ControlSource ="ç∑èoêléÅñº"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =2437
+                    Top =510
+                    Width =1416
+                    Height =255
+                    FontSize =8
+                    Name ="tbound1"
+                    ControlSource ="óXï÷î‘çÜ"
+                    AfterUpdate ="[Event Procedure]"
+                    OnEnter ="[Event Procedure]"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                    InputMask ="\\Åß000\\-9999;;_"
+                    OnLostFocus ="[Event Procedure]"
+                    ControlTipText ="óXï÷î‘çÜÇ™ÇÌÇ©ÇÁÇ»ÇØÇÍÇŒèZèäÇ©ÇÁí≤Ç◊ÇÈÇ±Ç∆Ç™èoóàÇ‹Ç∑ÅB"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextFontCharSet =0
+                    BackStyle =0
+                    Left =2130
+                    Top =6293
+                    Width =291
+                    Height =345
+                    FontSize =8
+                    TabIndex =9
+                    Name ="tbound7"
+                    ControlSource ="ç∑èoêlóXï÷î‘çÜ"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =2437
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =10
+                    BorderColor =255
+                    Name ="tbound1_sub1"
+                    ControlSource ="=Mid([tbound1],1,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =2829
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =11
+                    BorderColor =255
+                    Name ="tbound1_sub2"
+                    ControlSource ="=Mid([tbound1],2,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =3214
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =12
+                    BorderColor =255
+                    Name ="tbound1_sub3"
+                    ControlSource ="=Mid([tbound1],3,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =3657
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =13
+                    BorderColor =255
+                    Name ="tbound1_sub4"
+                    ControlSource ="=IIf(Mid([tbound1],4,1)=\"-\",Mid([tbound1],5,1),Mid([tbound1],4,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =4036
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =14
+                    BorderColor =255
+                    Name ="tbound1_sub5"
+                    ControlSource ="=IIf(Mid([tbound1],4,1)=\"-\",Mid([tbound1],6,1),Mid([tbound1],5,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =4411
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =15
+                    BorderColor =255
+                    Name ="tbound1_sub6"
+                    ControlSource ="=IIf(Mid([tbound1],4,1)=\"-\",Mid([tbound1],7,1),Mid([tbound1],6,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =4808
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =16
+                    BorderColor =255
+                    Name ="tbound1_sub7"
+                    ControlSource ="=IIf(Mid([tbound1],4,1)=\"-\",Mid([tbound1],8,1),Mid([tbound1],7,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =170
+                    Top =6289
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =17
+                    BorderColor =255
+                    Name ="tbound7_sub1"
+                    ControlSource ="=Mid([tbound7],1,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =95
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =397
+                    Top =6289
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =18
+                    BorderColor =255
+                    Name ="tbound7_sub2"
+                    ControlSource ="=Mid([tbound7],2,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =87
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =624
+                    Top =6289
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =19
+                    BorderColor =255
+                    Name ="tbound7_sub3"
+                    ControlSource ="=Mid([tbound7],3,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =907
+                    Top =6289
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =20
+                    BorderColor =255
+                    Name ="tbound7_sub4"
+                    ControlSource ="=IIf(Mid([tbound7],4,1)=\"-\",Mid([tbound7],5,1),Mid([tbound7],4,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =95
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =1134
+                    Top =6289
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =21
+                    BorderColor =255
+                    Name ="tbound7_sub5"
+                    ControlSource ="=IIf(Mid([tbound7],4,1)=\"-\",Mid([tbound7],6,1),Mid([tbound7],5,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =95
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =1361
+                    Top =6289
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =22
+                    BorderColor =255
+                    Name ="tbound7_sub6"
+                    ControlSource ="=IIf(Mid([tbound7],4,1)=\"-\",Mid([tbound7],7,1),Mid([tbound7],6,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =87
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =1588
+                    Top =6289
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =23
+                    BorderColor =255
+                    Name ="tbound7_sub7"
+                    ControlSource ="=IIf(Mid([tbound7],4,1)=\"-\",Mid([tbound7],8,1),Mid([tbound7],7,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    Vertical = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =247
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =2107
+                    Top =1663
+                    Width =567
+                    Height =3889
+                    FontSize =20
+                    TabIndex =4
+                    Name ="tbound10"
+                    ControlSource ="éÅñº2"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    Vertical = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =95
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =772
+                    Top =2547
+                    Width =305
+                    Height =3501
+                    TabIndex =24
+                    Name ="ÉeÉLÉXÉg0"
+                    ControlSource ="ç∑èoêlèZèä2"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    Vertical = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextAlign =1
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =521
+                    Top =3284
+                    Width =222
+                    Height =2775
+                    FontSize =10
+                    TabIndex =25
+                    Name ="å®èëÇ´"
+                    ControlSource ="ç∑èoêlå®èëÇ´"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin ComboBox
+                    OverlapFlags =247
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =170
+                    Top =6017
+                    Width =1653
+                    Height =220
+                    TabIndex =26
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"50\""
+                    Name ="ÉRÉìÉ{4"
+                    ControlSource ="ç∑èoêlÇhÇc"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW ç∑èoêlèÓïÒ.ç∑èoêlÇhÇc, ç∑èoêlèÓïÒ.ê‡ñæ FROM ç∑èoêlèÓïÒ;"
+                    ColumnWidths ="0;1440"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="1"
+                    BaseInfo ="\"SELECT DISTINCTROW ç∑èoêlèÓïÒ.ç∑èoêlÇhÇc, ç∑èoêlèÓïÒ.ê‡ñæ FROM ç∑èoêlèÓïÒ;\";\"ç∑èoêlèÓïÒ\";\"\";\"ç∑èoêlÇhÇc\""
+                        ";\"ê‡ñæ\";\"PrimaryKey\""
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =282
+                    Top =223
+                    Width =1416
+                    Height =255
+                    FontSize =8
+                    TabIndex =5
+                    Name ="éÅñºî˜í≤êÆ"
+                    ControlSource ="éÅñºî˜í≤êÆ"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =226
+                    Top =2263
+                    Width =1416
+                    Height =255
+                    FontSize =8
+                    TabIndex =27
+                    Name ="ÉeÉLÉXÉg8"
+                    ControlSource ="à íuí≤êÆ1"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+                Begin Label
+                    OverlapFlags =247
+                    Left =287
+                    Top =56
+                    Width =1515
+                    Height =195
+                    Name ="ÉâÉxÉã9"
+                    Caption ="éÅñºÇÃà íuî˜í≤êÆ"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =396
+                    Top =737
+                    Width =1416
+                    Height =255
+                    FontSize =8
+                    TabIndex =28
+                    BackColor =0
+                    Name ="óXï÷î‘çÜ"
+                    ControlSource ="óXï÷î‘çÜ"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                    InputMask ="\\Åß000\\-9999;;_"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =87
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =340
+                    Top =988
+                    Width =1416
+                    Height =210
+                    FontSize =8
+                    TabIndex =29
+                    BackColor =0
+                    Name ="èZèä1"
+                    ControlSource ="èZèä1"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =340
+                    Top =1243
+                    Width =1416
+                    Height =255
+                    FontSize =8
+                    TabIndex =30
+                    BackColor =0
+                    Name ="èZèä2"
+                    ControlSource ="èZèä2"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =95
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =340
+                    Top =1498
+                    Width =1416
+                    Height =255
+                    FontSize =8
+                    TabIndex =31
+                    BackColor =0
+                    Name ="Ç∂Ç„Ç§ÇµÇÂ1"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =95
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =340
+                    Top =1753
+                    Width =1416
+                    Height =255
+                    FontSize =8
+                    TabIndex =32
+                    BackColor =0
+                    Name ="Ç∂Ç„Ç§ÇµÇÂ2"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =247
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =340
+                    Top =1980
+                    Width =1416
+                    Height =255
+                    FontSize =8
+                    TabIndex =33
+                    BackColor =0
+                    Name ="åßñº"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =247
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =1700
+                    Top =1243
+                    Width =1416
+                    Height =255
+                    FontSize =8
+                    TabIndex =34
+                    BackColor =0
+                    Name ="ÇØÇÒ"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =2551
+                    Top =6515
+                    TabIndex =35
+                    Name ="îNâÍèÛ"
+                    ControlSource ="îNâÍèÛ"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =2777
+                            Top =6522
+                            Width =1125
+                            Height =225
+                            Name ="ÉâÉxÉã17"
+                            Caption ="îNâÍèÛÇèoÇ∑"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =247
+                    Left =622
+                    Top =510
+                    Width =340
+                    Height =284
+                    TabIndex =36
+                    Name ="ÉRÉ}ÉìÉh19"
+                    Caption ="Å©"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =247
+                    Left =962
+                    Top =510
+                    Width =340
+                    Height =284
+                    TabIndex =37
+                    Name ="ÉRÉ}ÉìÉh20"
+                    Caption ="Å®"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Dim éÅñºèâä˙à íu1 As Integer
+Dim éÅñºèâä˙à íu2 As Integer
+Dim ç∑èoêlèâä˙à íu As Integer
+
+Sub à íuí≤êÆ()
+    Dim x1, x2 As Integer
+    If IsNull(Me![éÅñºî˜í≤êÆ]) Then
+        x1 = 0
+    Else
+        x1 = Me![éÅñºî˜í≤êÆ]
+    End If
+    If IsNull(Me![à íuí≤êÆ1]) Then
+        x2 = 0
+    Else
+        x2 = Me![à íuí≤êÆ1]
+    End If
+    Me![tbound5].Left = éÅñºèâä˙à íu1 + x1
+    Me![tbound6_Sub1].Left = éÅñºèâä˙à íu1 + x1
+    Me![tbound10].Left = éÅñºèâä˙à íu2 + x1
+    Me![tbound9].Left = ç∑èoêlèâä˙à íu + x2
+End Sub
+
+Private Sub Form_Current()
+    à íuí≤êÆ
+End Sub
+
+Private Sub Form_Load()
+    éÅñºèâä˙à íu1 = Me![tbound5].Left
+    ç∑èoêlèâä˙à íu = Me![tbound9].Left
+    éÅñºèâä˙à íu2 = Me![tbound10].Left
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+    ÉRÉìÉgÉçÅ[Éãñºê›íËSub Me
+End Sub
+
+Private Sub tbound1_AfterUpdate()
+    óXï÷î‘çÜ_AfterUpdate_èàóù
+End Sub
+
+Private Sub tbound1_Enter()
+    tbound1.ForeColor = 0
+End Sub
+
+Private Sub tbound1_LostFocus()
+    tbound1.ForeColor = è⁄ç◊.BackColor
+    óXï÷î‘çÜ_Exit_èàóù
+End Sub
+
+Private Sub tbound2_Enter()
+    SendKeys "{f2}"
+End Sub
+
+Private Sub ÉRÉ}ÉìÉh19_Click()
+    éÅñºî˜í≤êÆ = éÅñºî˜í≤êÆ - 50
+    à íuí≤êÆ
+End Sub
+
+Private Sub ÉRÉ}ÉìÉh20_Click()
+    éÅñºî˜í≤êÆ = éÅñºî˜í≤êÆ + 50
+    à íuí≤êÆ
+End Sub
+
+Private Sub ÉRÉìÉ{4_AfterUpdate()
+    à íuí≤êÆ
+End Sub
+
+Private Sub éÅñºî˜í≤êÆ_AfterUpdate()
+    à íuí≤êÆ
+End Sub

@@ -1,0 +1,21 @@
+ID	adInteger	4
+氏名	adVarWChar	50
+連名	adVarWChar	50
+ふりがな	adVarWChar	50
+敬称	adVarWChar	10
+郵便番号	adVarWChar	7
+住所1	adVarWChar	100
+住所2	adVarWChar	100
+住所3	adVarWChar	100
+じゅうしょ1	adVarWChar	100
+じゅうしょ2	adVarWChar	100
+じゅうしょ3	adVarWChar	100
+電話番号	adVarWChar	50
+備考	adLongVarWChar	536870910
+入力日付	adDate	8
+印刷ﾏｰｸ	adBoolean	2
+
+		ID
+		Index	PrimaryKey
+		Index	ID
+		Index	電話番号

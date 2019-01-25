@@ -1,0 +1,135 @@
+Version =17
+VersionRequired =17
+Checksum =-100651886
+Begin Form
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    DefaultView =0
+    TabularCharSet =128
+    TabularFamily =50
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7483
+    DatasheetFontHeight =9
+    ItemSuffix =5
+    Left =1005
+    Top =720
+    Right =8775
+    Bottom =3780
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xd225098faeb1e140
+    End
+    DatasheetFontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =128
+            FontSize =9
+            FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+        End
+        Begin CommandButton
+            TextFontCharSet =128
+            Width =1701
+            Height =390
+            FontSize =9
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+        End
+        Begin TextBox
+            SpecialEffect =2
+            OldBorderStyle =0
+            TextFontCharSet =128
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+        End
+        Begin Section
+            Height =3061
+            BackColor =-2147483633
+            Name ="è⁄ç◊"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    OverlapFlags =85
+                    Left =283
+                    Top =226
+                    Width =5839
+                    Height =2778
+                    Name ="text"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6462
+                    Top =2040
+                    Width =576
+                    Height =576
+                    TabIndex =1
+                    Name ="ï¬Ç∂ÇÈ"
+                    Caption ="ÉRÉ}ÉìÉh3"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x0003100000000000800000000080000080800000000080008000800000808000 ,
+                        0x80808000c0c0c000ff000000c0c0c000ffff00000000ff00c0c0c00000ffff00 ,
+                        0xffffff0000000000
+                    End
+                    ControlTipText ="Ã´∞—Çï¬Ç∂ÇÈ"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =6462
+                    Top =2721
+                    Width =540
+                    Height =195
+                    Name ="ÉâÉxÉã4"
+                    Caption ="ï¬Ç∂ÇÈ"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub ï¬Ç∂ÇÈ_Click()
+On Error GoTo Err_ï¬Ç∂ÇÈ_Click
+
+
+    DoCmd.Close
+
+Exit_ï¬Ç∂ÇÈ_Click:
+    Exit Sub
+
+Err_ï¬Ç∂ÇÈ_Click:
+    MsgBox Err.Description
+    Resume Exit_ï¬Ç∂ÇÈ_Click
+    
+End Sub

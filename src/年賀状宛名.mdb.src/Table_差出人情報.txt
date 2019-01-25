@@ -1,0 +1,12 @@
+差出人ＩＤ	adInteger	4
+説明	adVarWChar	50
+差出人郵便番号	adVarWChar	7
+差出人住所1	adVarWChar	50
+差出人住所2	adVarWChar	50
+差出人肩書き	adVarWChar	30
+差出人氏名	adVarWChar	30
+位置調整1	adInteger	4
+
+		差出人ＩＤ
+		Index	PrimaryKey
+		Index	差出人郵便番号

@@ -1,0 +1,552 @@
+Version =19
+VersionRequired =19
+Checksum =99210100
+Begin Form
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularCharSet =128
+    TabularFamily =50
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =4762
+    DatasheetFontHeight =9
+    ItemSuffix =5
+    Left =405
+    Top =540
+    Right =5430
+    Bottom =2700
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xca86213aaba7e140
+    End
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="ＭＳ Ｐゴシック"
+    PrtMip = Begin
+        0xa3050000a1050000a1050000a105000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x4550534f4e20504d2d3934304300000000000000000000000000000000000000 ,
+        0x010470049c0076010f9b8007010009009a0b3408640001000700680102000100 ,
+        0x6801000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000001000000 ,
+        0x0000000001000000050000000000000000000000000000000000000000000000 ,
+        0x01000000340800009a0b00000000020000000100010000000100030000000500 ,
+        0x0200b40001000000000000000200000000000000000001000000000000000000 ,
+        0x0000000000000000000000000500000001000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000100000000000000000000000000 ,
+        0x000001000000010000002a0000002a0000002a000000c6000000a00b00007110 ,
+        0x0000680100006801000000000000444c4c4e616d6533323d455f445531374d4a ,
+        0x2e444c4c000000000000000000000000000009004c0b0000810f000064004c0b ,
+        0x0000810f00000000000014000000000000000000000000000000000032000000 ,
+        0xff00000001000000000000000000000000004500500053004f004e0020005000 ,
+        0x4d002d0039003400300043000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000001104000000010800000000001e00 ,
+        0x01002a0000002a0000002a000000c6000000
+    End
+    PrtDevNames = Begin
+        0x08001600240001004550534f4e20504d2d39343043004550534f4e20504d2d39 ,
+        0x3430430055534230303100
+    End
+    OnActivate ="[Event Procedure]"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            TextFontCharSet =128
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin Section
+            Height =1701
+            BackColor =-2147483633
+            Name ="詳細"
+            GUID = Begin
+                0xac8ab215f791e44a94378ee96789bd56
+            End
+            Begin
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    SpecialEffect =2
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    IMEMode =1
+                    Left =1072
+                    Top =570
+                    Width =1247
+                    FontSize =9
+                    TabIndex =1
+                    BackColor =13692119
+                    ForeColor =-2147483640
+                    ColumnInfo ="\"\";\"\";\"10\";\"200\""
+                    GUID = Begin
+                        0x76768cb3f569194bb76376d96b332310
+                    End
+                    Name ="県Select"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW U_Sub.県 FROM U_Sub GROUP BY U_Sub.県 ORDER BY Min(U_Sub.地域); "
+                    AfterUpdate ="[Event Procedure]"
+                    OnEnter ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                    OnKeyDown ="[Event Procedure]"
+                    ControlTipText ="この入力欄では郵便番号を記入していない時に住所から郵便番号を探して入力する事ができます。"
+                    Begin
+                        Begin Label
+                            BackStyle =0
+                            OverlapFlags =93
+                            TextFontCharSet =128
+                            TextAlign =1
+                            TextFontFamily =50
+                            Left =680
+                            Top =569
+                            Width =285
+                            Height =225
+                            FontSize =9
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="ラベル29"
+                            Caption ="県"
+                            FontName ="ＭＳ Ｐゴシック"
+                            GUID = Begin
+                                0x09dd41ec8acef146b3f5c9f8ee56618d
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    AutoExpand = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =2
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    IMEMode =1
+                    ColumnCount =3
+                    ListRows =15
+                    ListWidth =5670
+                    Left =1072
+                    Top =910
+                    Width =2789
+                    FontSize =9
+                    TabIndex =2
+                    BoundColumn =1
+                    BackColor =13692119
+                    ForeColor =-2147483640
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"200\""
+                    GUID = Begin
+                        0x61cf25b9822fc44ab077b799c9bf65d2
+                    End
+                    Name ="市Select"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW U_Sub.市, U_Sub.地域, U_Sub.ShiR FROM U_Sub; "
+                    ColumnWidths ="2835;0;2835"
+                    AfterUpdate ="[Event Procedure]"
+                    OnEnter ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                    OnKeyDown ="[Event Procedure]"
+                    OnNotInList ="[Event Procedure]"
+                    BaseInfo ="\"SELECT DISTINCTROW U_Sub.市, U_Sub.地域, U_Sub.ShiR FROM U_Sub; \";\"U_Sub\";\"\""
+                        ";\"地域\";\"市\";\"地域\""
+                    Begin
+                        Begin Label
+                            BackStyle =0
+                            OverlapFlags =93
+                            TextFontCharSet =128
+                            TextAlign =1
+                            TextFontFamily =50
+                            Left =510
+                            Top =900
+                            Width =510
+                            Height =225
+                            FontSize =9
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="ラベル31"
+                            Caption ="市･区"
+                            FontName ="ＭＳ Ｐゴシック"
+                            GUID = Begin
+                                0x8a0af8e4608c0846958c94e7a431dd3d
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    AutoExpand = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =2
+                    OverlapFlags =93
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    IMEMode =1
+                    ColumnCount =7
+                    ListRows =12
+                    ListWidth =5670
+                    Left =1072
+                    Top =1251
+                    Width =3402
+                    FontSize =9
+                    TabIndex =3
+                    BackColor =13692119
+                    ForeColor =-2147483640
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"\";\"10\";\"1"
+                        "48\""
+                    GUID = Begin
+                        0x19c8ddc5e65279478619d2b0217df354
+                    End
+                    Name ="Town"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW U_番号.町, U_番号.町R, U_番号.U7, U_番号.県, U_番号.市, U_番号.KenR, U_番号.Shi"
+                        "R FROM U_番号 WHERE (((U_番号.地域)=[市Select])); "
+                    ColumnWidths ="2268;3402;0;0;0;1134;1134"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="ＭＳ Ｐゴシック"
+                    OnNotInList ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =0
+                            OverlapFlags =93
+                            TextFontCharSet =128
+                            TextAlign =1
+                            TextFontFamily =50
+                            Left =680
+                            Top =1250
+                            Width =240
+                            Height =225
+                            FontSize =9
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="ラベル33"
+                            Caption ="町"
+                            FontName ="ＭＳ Ｐゴシック"
+                            GUID = Begin
+                                0x65f627190f15694f88ef68724b79ff30
+                            End
+                        End
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =3
+                    BackStyle =0
+                    OverlapFlags =255
+                    Left =510
+                    Top =399
+                    Width =4082
+                    Height =1248
+                    Name ="ボックス78"
+                    GUID = Begin
+                        0x78fe7ea3b6a6964fac9b4394019c47c2
+                    End
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    FELineBreak = NotDefault
+                    OverlapFlags =255
+                    IMEMode =1
+                    Left =2608
+                    Top =570
+                    Width =1881
+                    Height =280
+                    TabIndex =4
+                    BackColor =13692119
+                    Name ="住所検索"
+                    AfterUpdate ="[Event Procedure]"
+                    ControlTipText ="県を選択すると検索が早くなります"
+                    GUID = Begin
+                        0x5d5ffa515201a64cbaa3b2b43f07e159
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =255
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    Left =2612
+                    Top =396
+                    Width =1665
+                    Height =195
+                    Name ="ラベル106"
+                    Caption ="住所の一部から検索"
+                    FontName ="ＭＳ Ｐゴシック"
+                    GUID = Begin
+                        0xf11d66a2497cd947abfcc23d8d4b5c81
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =119
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    Left =390
+                    Top =60
+                    Width =3075
+                    Height =330
+                    FontSize =14
+                    FontWeight =700
+                    Name ="ラベル0"
+                    Caption ="郵便番号 住所から変換"
+                    FontName ="ＭＳ Ｐゴシック"
+                    GUID = Begin
+                        0xea03520e4aa0664a8928efcaa25405eb
+                    End
+                End
+                Begin TextBox
+                    FELineBreak = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =4762
+                    Top =1474
+                    Width =0
+                    Height =0
+                    Name ="テキスト1"
+                    BeforeUpdate ="[Event Procedure]"
+                    OnEnter ="[Event Procedure]"
+                    GUID = Begin
+                        0x62b377353efaa84e834ead73dd032d2b
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Dim db As Database
+
+
+Private Sub テキスト1_Enter()
+' マイクロソフトのサポートのページより
+' http://www.microsoft.com/mscorp/worldwide/japan/support/kb/articles/j022/4/19.htm
+'[AC95] フォームを開くイベントによって漢字変換が無効になる
+'最終更新日: 96/03/11
+'文書番号: J022419
+    SendKeys "{enter}", False
+'まずこのフォームを開くとこのテキストボックスにフォーカスが移る
+'次に 自動的に {Enter} を押して次のテキストボックスにフォーカスを移動する
+'どのようなプログラムから呼び出されても対応できるようなプログラム
+End Sub
+
+Private Sub Form_Close()
+    db.Close
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+    Set db = CurrentDb
+End Sub
+
+Private Sub 県Select_AfterUpdate()
+    Dim sql As String
+    
+    sql = "SELECT DISTINCTROW U_Sub.市, U_Sub.地域, U_Sub.ShiR FROM U_Sub"
+
+    If Len(Me.県Select) > 0 Then
+        sql = sql & " WHERE (U_Sub.県)='" & Me.県Select.Value & "'"
+    End If
+        
+    Me.市Select.RowSource = sql
+    With 市Select
+        .SetFocus
+    End With
+
+End Sub
+
+Private Sub 県Select_Enter()
+    'ここに移ったときに一時的に市Selectにフォーカスの移動をできるようにする
+    Me![市Select].TabStop = True
+End Sub
+
+Private Sub 県Select_KeyDown(KeyCode As Integer, Shift As Integer)
+    If KeyCode = 27 Then
+        住所から変換の終了
+    End If
+
+End Sub
+
+Private Sub 市Select_AfterUpdate()
+    With Town
+        .Requery
+        .SetFocus
+        .Dropdown
+    End With
+
+End Sub
+
+Private Sub 市Select_Enter()
+   Me![市Select].TabStop = False
+'   Me![市Select].Dropdown
+'高速に検索するための工夫
+'自動拡張しないようにする
+End Sub
+
+Private Sub 市Select_KeyDown(KeyCode As Integer, Shift As Integer)
+    If KeyCode = 27 Then
+        住所から変換の終了
+    End If
+
+End Sub
+
+Private Sub 市Select_NotInList(NewData As String, Response As Integer)
+Dim sql As String
+
+'市の名称がまだ短い時
+    sql = "SELECT DISTINCTROW U_Sub.市, U_Sub.地域, U_Sub.ShiR FROM U_Sub"
+         
+    If Len(Me.県Select) > 0 Then
+        sql = sql & " where (U_Sub.県)='" & Me.県Select.Value & "'"
+    ElseIf Len(NewData) > 0 Then
+        sql = sql & " WHERE (U_Sub.市) Like '*" & NewData & "*'"
+    End If
+            
+    Me.市Select.RowSource = sql
+        
+    Response = acDataErrContinue
+    Me.[市Select].Dropdown
+
+End Sub
+
+Private Sub Town_AfterUpdate()
+    Dim 県 As String, 市 As String, 町 As String, 住所 As String, i As Integer
+    Dim KenR As String, ShiR As String, MachiR As String, JyuR As String
+    Dim IsLoad As Integer
+    
+    If Not IsEmpty(Town) Then
+        県 = Me![Town].Column(3)
+        市 = Me![Town].Column(4)
+        町 = Me![Town].Column(0)
+        KenR = Me![Town].Column(5)
+        ShiR = Me![Town].Column(6)
+        MachiR = Me![Town].Column(1)
+        
+        If Left(町, 5) = "以下に掲載" Then ' 住所名が以下に掲載のない場合の時
+            '町の名前を入れない
+            If Left(県, 2) = Left(市, 2) Then       '県名と市名が同じなら市から表示
+                住所 = 市
+                JyuR = ShiR
+            Else
+                住所 = 県 & 市
+                JyuR = KenR & " " & ShiR
+            End If
+        Else
+            If Left(県, 2) = Left(市, 2) Then       '県名と市名が同じなら市から表示
+                住所 = 市 & 町
+                JyuR = ShiR & " " & MachiR
+            Else
+                住所 = 県 & 市 & 町
+                JyuR = KenR & " " & ShiR & " " & MachiR
+            End If
+        End If
+        On Error Resume Next
+        If (Me!入力チェック = False) Then
+            C_Uban = Me![Town].Column(2)
+            C_J1 = Left(住所, 18)                  '有れば書き込み
+            C_J2 = ""                              'テーブルデザインで空文字列の許可を
+            C_F1 = Left(JyuR, 50)                           '「はい」にしないとエラーになる
+            C_F2 = ""
+        End If
+'        Me.住所2.SetFocus
+        '１町名多行表示の最終行を選択した場合も「長い住所」へ行かせる
+        If Len(住所) > 18 Or InStr(住所, "）") Then GoTo 多文字数
+        GoTo 終了
+    End If
+    
+    On Error GoTo 0
+
+多文字数:
+    Dim myrs As Recordset
+'2003.06.24 Access2000のパラメータクエリーの改造
+    Dim strSQL As String
+    Dim strYubin As String
+    strYubin = C_Uban
+    strSQL = "select * from U_番号 where U5 = '" & strYubin & "' or U7 = '" & strYubin & "'"
+'    Set myrs = db.OpenRecordset("UQ_変換番号", dbOpenDynaset)
+    Set myrs = db.OpenRecordset(strSQL, dbOpenDynaset)
+    
+    Dim Add As String
+    MsgBox "町名の文字数が多すぎて住所欄に入りきらないので別表示します。"
+    DoCmd.Hourglass True
+    With myrs
+        If Left(県, 2) = Left(市, 2) Then       '県名と市名が同じなら市から表示
+                Add = 市
+                JyuR = ShiR
+            Else
+                Add = 県 & 市
+                JyuR = KenR & " " & ShiR & " "
+        End If
+        Do Until .EOF
+            Add = Add & !町
+            JyuR = JyuR & " " & !町R
+            myrs.MoveNext
+        Loop
+    End With
+    If (Me!入力チェック = False) Then
+        C_J1 = Left(Add, 18)
+        C_F1 = Left(JyuR, 50)
+    End If
+    DoCmd.Hourglass False
+    DoCmd.OpenForm "UP_長い住所"
+    Forms!UP_長い住所!全住所 = Add
+    Forms!UP_長い住所!JyuSho = JyuR
+    myrs.Close
+    
+終了:
+    Me.[県Select] = ""
+    Me.[市Select] = ""
+    Me.市Select.RowSource = "市一覧"
+    Me.[Town] = ""
+    Me.[住所検索] = ""
+    住所から変換の終了
+End Sub
+
+Private Sub Town_NotInList(NewData As String, Response As Integer)
+    MsgBox "住所が見つからなければ" & Chr(10) & Chr(13) & _
+            "「以下に掲載がない場合」を選択してください。"
+    Response = acDataErrContinue 'エラーメッセージを表示せずに続ける
+    'acDataErrDisplay 既定のメッセージが表示されます。入力された値はコンボ ボックスに追加されません。
+    'acDataErrContinue   既定のメッセージは表示されません。カスタム メッセージを表示する場合に使います。
+    'acDataErrAdded  メッセージは表示されません。入力された値がコンボ ボックスに追加されます
+End Sub
+
+Private Sub 住所検索_AfterUpdate()
+    Dim str As String
+    Dim seaKen As String
+    Dim search As String
+    Dim search2 As String
+    
+    If (Len(Me![県Select]) >= 1) Then
+        seaKen = "(([県])=" & Chr(34) & CStr([県Select]) & Chr(34) & ")and"
+    Else
+        seaKen = ""
+    End If
+    
+    If IsNull(Me![住所検索]) Then
+        Exit Sub
+    End If
+    str = Me![住所検索]
+    search = "(([市])like" & Chr(34) & Chr(42) & CStr(str) & Chr(42) & Chr(34) & ")"
+    search2 = "(([町])like" & Chr(34) & Chr(42) & CStr(str) & Chr(42) & Chr(34) & ")"
+    DoCmd.OpenForm "UP_番号一覧", , , seaKen & "(" & search & "or" & search2 & ")"
+
+    Me.[住所検索] = ""
+    Me.[県Select] = ""
+    Me.[市Select] = ""
+    Me.市Select.RowSource = "市一覧"
+    Me.[Town] = ""
+    住所から変換の終了
+End Sub

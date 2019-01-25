@@ -1,0 +1,56 @@
+Version =131074
+ColumnsShown =1
+Begin
+    MacroName ="データ入力"
+    Action ="OpenForm"
+    Argument ="名簿入力フォーム"
+    Argument ="0"
+    Argument =""
+    Argument =""
+    Argument ="-1"
+    Argument ="0"
+End
+Begin
+End
+Begin
+    MacroName ="レイアウト入力"
+    Action ="OpenForm"
+    Argument ="レイアウト"
+    Argument ="0"
+    Argument =""
+    Argument =""
+    Argument ="-1"
+    Argument ="0"
+End
+Begin
+End
+Begin
+    MacroName ="一覧入力"
+    Action ="OpenForm"
+    Argument ="名簿一覧表"
+    Argument ="0"
+    Argument =""
+    Argument =""
+    Argument ="-1"
+    Argument ="0"
+End
+Begin
+End
+Begin
+    MacroName ="印刷"
+    Action ="OpenReport"
+    Argument ="年賀状"
+    Argument ="2"
+End
+Begin
+End
+Begin
+    MacroName ="差出人の編集"
+    Action ="OpenForm"
+    Argument ="差出人編集"
+    Argument ="0"
+    Argument =""
+    Argument =""
+    Argument ="-1"
+    Argument ="0"
+End

@@ -1,0 +1,339 @@
+Version =19
+VersionRequired =19
+Checksum =99685236
+Begin Form
+    AutoCenter = NotDefault
+    AllowAdditions = NotDefault
+    TabularCharSet =128
+    TabularFamily =50
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8390
+    DatasheetFontHeight =9
+    ItemSuffix =35
+    Left =2160
+    Top =1605
+    Right =10830
+    Bottom =5100
+    DatasheetGridlinesColor =12632256
+    Filter ="((([s])like\"*’Yâ}*\")or(([’¬])like\"*’Yâ}*\"))"
+    RecSrcDt = Begin
+        0x5230c601374be240
+    End
+    RecordSource ="U_”Ô†"
+    Caption ="U_”Ô†"
+    DatasheetFontName ="‚l‚r ‚oƒSƒVƒbƒN"
+    PrtMip = Begin
+        0xa3050000a1050000a1050000a105000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x4550534f4e20504d2d3934304300000000000000000000000000000000000000 ,
+        0x010470049c0076010f9b8007010009009a0b3408640001000700680102000100 ,
+        0x6801000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000001000000 ,
+        0x0000000001000000050000000000000000000000000000000000000000000000 ,
+        0x01000000340800009a0b00000000020000000100010000000100030000000500 ,
+        0x0200b40001000000000000000200000000000000000001000000000000000000 ,
+        0x0000000000000000000000000500000001000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000100000000000000000000000000 ,
+        0x000001000000010000002a0000002a0000002a000000c6000000a00b00007110 ,
+        0x0000680100006801000000000000444c4c4e616d6533323d455f445531374d4a ,
+        0x2e444c4c000000000000000000000000000009004c0b0000810f000064004c0b ,
+        0x0000810f00000000000014000000000000000000000000000000000032000000 ,
+        0xff00000001000000000000000000000000004500500053004f004e0020005000 ,
+        0x4d002d0039003400300043000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000001104000000010800000000001e00 ,
+        0x01002a0000002a0000002a000000c6000000
+    End
+    PrtDevNames = Begin
+        0x08001600240001004550534f4e20504d2d39343043004550534f4e20504d2d39 ,
+        0x3430430055534230303100
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin FormHeader
+            Height =340
+            BackColor =-2147483633
+            Name ="ƒtƒH[ƒ€ƒwƒbƒ_["
+            GUID = Begin
+                0x4905178c0754de40a9cc8ecbfad18da8
+            End
+            Begin
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    TextAlign =1
+                    TextFontFamily =50
+                    Left =57
+                    Top =57
+                    Width =627
+                    Height =225
+                    FontSize =9
+                    BackColor =-2147483633
+                    ForeColor =-2147483630
+                    Name ="’nˆæƒ‰ƒxƒ‹"
+                    Caption ="’nˆæ"
+                    FontName ="‚l‚r ‚oƒSƒVƒbƒN"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x0bf27d1b693a9c41b1d99d53a8cc467c
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    TextAlign =1
+                    TextFontFamily =50
+                    Left =735
+                    Top =57
+                    Width =1317
+                    Height =225
+                    FontSize =9
+                    BackColor =-2147483633
+                    ForeColor =-2147483630
+                    Name ="U7ƒ‰ƒxƒ‹"
+                    Caption ="—X•Ö”Ô†"
+                    FontName ="‚l‚r ‚oƒSƒVƒbƒN"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x7ba39552c802954fa6df2684884ced0b
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    Left =2154
+                    Top =57
+                    Width =1247
+                    Height =283
+                    FontSize =9
+                    Name ="ƒ‰ƒxƒ‹34"
+                    Caption ="ZŠ"
+                    FontName ="‚l‚r ‚oƒSƒVƒbƒN"
+                    GUID = Begin
+                        0x143888ea4a10544d99b184367eb142b8
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =623
+            BackColor =-2147483633
+            Name ="Ú×"
+            GUID = Begin
+                0x8a192da2bc2817409f2d6520ca458484
+            End
+            Begin
+                Begin TextBox
+                    SpecialEffect =2
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    Left =735
+                    Top =57
+                    Width =1317
+                    ColumnWidth =705
+                    FontSize =9
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="U7"
+                    ControlSource ="U7"
+                    FontName ="‚l‚r ‚oƒSƒVƒbƒN"
+                    InputMask ="\\§000\\-9999;;_"
+                    GUID = Begin
+                        0x158692f9baded54d97779a07054588da
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    SpecialEffect =2
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    Left =2097
+                    Top =56
+                    Width =1026
+                    ColumnWidth =3000
+                    FontSize =9
+                    TabIndex =1
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="Œ§"
+                    ControlSource ="Œ§"
+                    FontName ="‚l‚r ‚oƒSƒVƒbƒN"
+                    GUID = Begin
+                        0xf1d901b23e792a4d82318c424461bb38
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    SpecialEffect =2
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    Left =3180
+                    Top =56
+                    Width =5166
+                    ColumnWidth =3000
+                    FontSize =9
+                    TabIndex =2
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="s"
+                    ControlSource ="s"
+                    FontName ="‚l‚r ‚oƒSƒVƒbƒN"
+                    GUID = Begin
+                        0x3e4eec967bbc434492db2643eefae321
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    SpecialEffect =2
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    Left =4362
+                    Top =340
+                    Width =3981
+                    ColumnWidth =3000
+                    FontSize =9
+                    TabIndex =3
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="’¬"
+                    ControlSource ="’¬"
+                    FontName ="‚l‚r ‚oƒSƒVƒbƒN"
+                    GUID = Begin
+                        0xba6c507510255e4eacf9dee7312202e5
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    Left =113
+                    Top =57
+                    Width =510
+                    Height =283
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =4
+                    Name ="ƒRƒ}ƒ“ƒh33"
+                    Caption ="‘I‘ğ"
+                    OnClick ="[Event Procedure]"
+                    FontName ="‚l‚r ‚oƒSƒVƒbƒN"
+                    GUID = Begin
+                        0x69c0e955e37e4444b0811e79265e7173
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="ƒtƒH[ƒ€ƒtƒbƒ^["
+            GUID = Begin
+                0xee942efbf294734a8f28bc6a07838c0e
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub ƒRƒ}ƒ“ƒh33_Click()
+    Dim Œ§ As String, s As String, ’¬ As String, ZŠ As String, i As Integer
+    Dim KenR As String, ShiR As String, MachiR As String, JyuR As String
+    Dim IsLoad As Integer
+    Dim U7 As String
+    
+'ƒvƒƒOƒ‰ƒ€‚ÌŠJn
+        U7 = Me![U7]
+        Œ§ = Me![Œ§]
+        s = Me![s]
+        ’¬ = Me![’¬]
+        KenR = Me![KenR]
+        ShiR = Me![ShiR]
+        MachiR = Me![’¬R]
+        
+        If Left(’¬, 5) = "ˆÈ‰º‚ÉŒfÚ" Then ' ZŠ–¼‚ªˆÈ‰º‚ÉŒfÚ‚Ì‚È‚¢ê‡‚Ì
+            '’¬‚Ì–¼‘O‚ğ“ü‚ê‚È‚¢
+            If Left(Œ§, 2) = Left(s, 2) Then       'Œ§–¼‚Æs–¼‚ª“¯‚¶‚È‚çs‚©‚ç•\¦
+                ZŠ = s
+                JyuR = ShiR
+            Else
+                ZŠ = Œ§ & s
+                JyuR = KenR & " " & ShiR
+            End If
+        Else
+            If Left(Œ§, 2) = Left(s, 2) Then       'Œ§–¼‚Æs–¼‚ª“¯‚¶‚È‚çs‚©‚ç•\¦
+                ZŠ = s & ’¬
+                JyuR = ShiR & " " & MachiR
+            Else
+                ZŠ = Œ§ & s & ’¬
+                JyuR = KenR & " " & ShiR & " " & MachiR
+            End If
+        End If
+        C_Uban = U7
+        C_J1 = Left(ZŠ, 18)                  '—L‚ê‚Î‘‚«‚İ
+        C_J2 = ""                              'ƒe[ƒuƒ‹ƒfƒUƒCƒ“‚Å‹ó•¶š—ñ‚Ì‹–‰Â‚ğ
+                                               'u‚Í‚¢v‚É‚µ‚È‚¢‚ÆƒGƒ‰[‚É‚È‚é
+        C_F1 = Left(JyuR, 30)
+        C_F2 = ""
+
+
+                        '‚P’¬–¼‘½s•\¦‚ÌÅIs‚ğ‘I‘ğ‚µ‚½ê‡‚àu’·‚¢ZŠv‚Ös‚©‚¹‚é
+        If Len(ZŠ) > 18 Or InStr(ZŠ, "j") Then GoTo ‘½•¶š”
+        
+        DoCmd.Close acForm, "”Ô†ˆê——"
+        Exit Sub
+
+
+
+‘½•¶š”:
+    Dim db As Database, myrs As Recordset
+    Set db = CurrentDb
+'2003.06.24 Access2000‚Ìƒpƒ‰ƒ[ƒ^ƒNƒGƒŠ[‚Ì‰ü‘¢
+    Dim strSQL As String
+    Dim strYubin As String
+    strYubin = C_Uban
+    strSQL = "select * from U_”Ô† where U5 = '" & strYubin & "' or U7 = '" & strYubin & "'"
+'    Set myrs = db.OpenRecordset("UQ_•ÏŠ·”Ô†", dbOpenDynaset)
+    Set myrs = db.OpenRecordset(strSQL, dbOpenDynaset)
+
+    
+    Dim Add As String
+    MsgBox "’¬–¼‚Ì•¶š”‚ª‘½‚·‚¬‚ÄZŠ—“‚É“ü‚è‚«‚ç‚È‚¢‚Ì‚Å•Ê•\¦‚µ‚Ü‚·B"
+    DoCmd.Hourglass True
+    With myrs
+    If Left(!Œ§, 2) = Left(!s, 2) Then       'Œ§–¼‚Æs–¼‚ª“¯‚¶‚È‚çs‚©‚ç•\¦
+            Add = !s
+            JyuR = !ShiR
+        Else
+            Add = !Œ§ & !s
+            JyuR = !KenR & " " & !ShiR
+    End If
+    Do Until .EOF
+        Add = Add & !’¬
+        JyuR = JyuR & " " & !’¬R
+        myrs.MoveNext
+    Loop
+    End With
+    DoCmd.Hourglass False
+    DoCmd.OpenForm "UP_’·‚¢ZŠ"
+    Forms!UP_’·‚¢ZŠ!‘SZŠ = Add
+    Forms!UP_’·‚¢ZŠ!JyuSho = JyuR
+    DoCmd.Close acForm, "”Ô†ˆê——"
+ End Sub

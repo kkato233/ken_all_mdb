@@ -1,0 +1,6 @@
+ID	adInteger	4
+ディレクトリー名	adVarWChar	255
+備考	adVarWChar	50
+
+		ID
+		Index	PrimaryKey

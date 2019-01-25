@@ -1,0 +1,14 @@
+ZŠID	adInteger	4
+—X•Ö”Ô†	adVarWChar	7
+ZŠ‚P	adVarWChar	50
+ZŠ‚Q	adVarWChar	50
+‚¶‚ã‚¤‚µ‚å‚P	adVarWChar	50
+‚¶‚ã‚¤‚µ‚å‚Q	adVarWChar	50
+–¼	adVarWChar	50
+“d˜b”Ô†	adVarWChar	50
+
+		ZŠID
+		Index	PrimaryKey
+		Index	ZŠID
+		Index	“d˜b”Ô†
+		Index	—X•Ö”Ô†

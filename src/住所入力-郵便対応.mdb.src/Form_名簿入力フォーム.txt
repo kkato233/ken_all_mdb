@@ -1,0 +1,512 @@
+Version =20
+VersionRequired =20
+Checksum =918558166
+Begin Form
+    DefaultView =0
+    TabularCharSet =128
+    TabularFamily =50
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7336
+    DatasheetFontHeight =9
+    ItemSuffix =31
+    Left =465
+    Top =300
+    Right =8085
+    Bottom =5385
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xba54cd83b4a7e140
+    End
+    RecordSource ="名簿"
+    Caption ="名簿"
+    OnCurrent ="[Event Procedure]"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="ＭＳ Ｐゴシック"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x4550534f4e20504d2d3934304300000000000000000000000000000000000000 ,
+        0x010470049c0076010f9b8007010009009a0b3408640001000700680102000100 ,
+        0x6801000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000001000000 ,
+        0x0000000001000000050000000000000000000000000000000000000000000000 ,
+        0x01000000340800009a0b00000000020000000100010000000100030000000500 ,
+        0x0200b40001000000000000000200000000000000000001000000000000000000 ,
+        0x0000000000000000000000000500000001000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000100000000000000000000000000 ,
+        0x000001000000010000002a0000002a0000002a000000c6000000a00b00007110 ,
+        0x0000680100006801000000000000444c4c4e616d6533323d455f445531374d4a ,
+        0x2e444c4c000000000000000000000000000009004c0b0000810f000064004c0b ,
+        0x0000810f00000000000014000000000000000000000000000000000032000000 ,
+        0xff00000001000000000000000000000000004500500053004f004e0020005000 ,
+        0x4d002d0039003400300043000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000001104000000010000000000001e00 ,
+        0x010000000000000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x08001600240001004550534f4e20504d2d39343043004550534f4e20504d2d39 ,
+        0x3430430055534230303100
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =128
+            TextAlign =3
+            TextFontFamily =50
+            FontSize =9
+            BackColor =-2147483633
+            ForeColor =-2147483630
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin CommandButton
+            TextFontCharSet =128
+            Width =1701
+            Height =390
+            FontSize =9
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            TextFontCharSet =128
+            TextFontFamily =50
+            Width =5070
+            LabelX =-60
+            FontSize =9
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="フォームヘッダー"
+        End
+        Begin Section
+            Height =5081
+            BackColor =-2147483633
+            Name ="詳細"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    IMEMode =1
+                    Left =1617
+                    Top =660
+                    Width =2175
+                    ColumnWidth =2310
+                    TabIndex =1
+                    Name ="氏名"
+                    ControlSource ="氏名"
+                    FuriganaControl ="ふりがな"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1065
+                            Top =660
+                            Width =435
+                            Height =225
+                            Name ="氏名ラベル"
+                            Caption ="氏名"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMEMode =4
+                    Left =1617
+                    Top =420
+                    Width =2175
+                    ColumnWidth =2310
+                    TabIndex =2
+                    Name ="ふりがな"
+                    ControlSource ="ふりがな"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMEMode =2
+                    Left =1579
+                    Top =1530
+                    Width =1215
+                    ColumnWidth =705
+                    TabIndex =5
+                    Name ="郵便番号"
+                    ControlSource ="郵便番号"
+                    AfterUpdate ="[Event Procedure]"
+                    OnExit ="[Event Procedure]"
+                    InputMask ="000\\-9999;;_"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =724
+                            Top =1530
+                            Width =795
+                            Height =225
+                            Name ="郵便番号ラベル"
+                            Caption ="郵便番号"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =223
+                    IMEMode =1
+                    Left =1561
+                    Top =2153
+                    Width =5100
+                    ColumnWidth =2310
+                    TabIndex =6
+                    Name ="住所1"
+                    ControlSource ="住所1"
+                    OnGotFocus ="[Event Procedure]"
+                    FuriganaControl ="じゅうしょ1"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =1054
+                            Top =2153
+                            Width =525
+                            Height =225
+                            Name ="住所1ラベル"
+                            Caption ="住所1"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =95
+                    IMEMode =1
+                    Left =1561
+                    Top =2734
+                    Width =5100
+                    ColumnWidth =2310
+                    TabIndex =8
+                    Name ="住所2"
+                    ControlSource ="住所2"
+                    OnGotFocus ="[Event Procedure]"
+                    FuriganaControl ="じゅうしょ2"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =1036
+                            Top =2734
+                            Width =525
+                            Height =225
+                            Name ="住所2ラベル"
+                            Caption ="住所2"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =5215
+                    Top =113
+                    Width =2121
+                    TabIndex =14
+                    Name ="コマンド16"
+                    Caption ="タックシールの印刷(1枚)"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =3908
+                    Top =660
+                    Width =675
+                    TabIndex =3
+                    Name ="敬称"
+                    ControlSource ="敬称"
+                    DefaultValue ="\"様\""
+                End
+                Begin TextBox
+                    OverlapFlags =95
+                    IMEMode =1
+                    Left =1561
+                    Top =3300
+                    Width =5100
+                    TabIndex =10
+                    Name ="住所3"
+                    ControlSource ="住所3"
+                    FuriganaControl ="じゅうしょ3"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =1036
+                            Top =3300
+                            Width =525
+                            Height =225
+                            Name ="ラベル19"
+                            Caption ="住所3"
+                        End
+                    End
+                End
+                Begin TextBox
+                    ScrollBars =2
+                    OverlapFlags =85
+                    Left =1561
+                    Top =3928
+                    Width =5085
+                    Height =768
+                    TabIndex =13
+                    Name ="備考"
+                    ControlSource ="備考"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =963
+                            Top =3928
+                            Width =570
+                            Height =240
+                            Name ="ラベル20"
+                            Caption ="備考:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =1561
+                    Top =4779
+                    Width =2670
+                    TabIndex =15
+                    Name ="入力日付"
+                    ControlSource ="入力日付"
+                    Format ="General Date"
+                    DefaultValue ="=Now()"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =623
+                            Top =4779
+                            Width =900
+                            Height =225
+                            Name ="ラベル21"
+                            Caption ="入力日付:"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =5215
+                    Top =566
+                    TabIndex =16
+                    Name ="コマンド22"
+                    Caption ="テキストに出力"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMEMode =4
+                    Left =1561
+                    Top =1913
+                    Width =5100
+                    TabIndex =7
+                    Name ="じゅうしょ1"
+                    ControlSource ="じゅうしょ1"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMEMode =4
+                    Left =1561
+                    Top =2494
+                    Width =5100
+                    TabIndex =9
+                    Name ="じゅうしょ2"
+                    ControlSource ="じゅうしょ2"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMEMode =4
+                    Left =1561
+                    Top =3060
+                    Width =5100
+                    TabIndex =11
+                    Name ="じゅうしょ3"
+                    ControlSource ="じゅうしょ3"
+                End
+                Begin CheckBox
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =5558
+                    Top =4841
+                    TabIndex =17
+                    Name ="印刷ﾏｰｸ"
+                    ControlSource ="印刷ﾏｰｸ"
+                    StatusBarText ="印刷を行なうかどうか？"
+                    DefaultValue ="True"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            TextAlign =0
+                            Left =5788
+                            Top =4811
+                            Width =750
+                            Height =225
+                            Name ="ラベル26"
+                            Caption ="印刷ﾏｰｸ"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1561
+                    Top =3614
+                    Width =2655
+                    TabIndex =12
+                    Name ="電話番号"
+                    ControlSource ="電話番号"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =728
+                            Top =3614
+                            Width =795
+                            Height =225
+                            Name ="ラベル27"
+                            Caption ="電話番号"
+                        End
+                    End
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =1635
+                    Top =90
+                    Width =690
+                    Name ="ID"
+                    ControlSource ="ID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1335
+                            Top =90
+                            Width =240
+                            Height =225
+                            Name ="ラベル28"
+                            Caption ="ID"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMEMode =1
+                    Left =2721
+                    Top =963
+                    Width =1086
+                    Height =227
+                    TabIndex =4
+                    Name ="連名"
+                    ControlSource ="連名"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="フォームフッター"
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub Form_Current()
+    Forms![名簿一覧フォーム].Requery
+End Sub
+
+Private Sub コマンド16_Click()
+    DoCmd.OpenForm "タック1枚印刷フォーム"
+    Forms![タック1枚印刷フォーム]![郵便番号] = Me.郵便番号
+    Forms![タック1枚印刷フォーム]![住所1] = Me.住所1
+    Forms![タック1枚印刷フォーム]![住所2] = Me.住所2
+    Forms![タック1枚印刷フォーム]![住所3] = Me.住所3
+    Forms![タック1枚印刷フォーム]![氏名] = Me.氏名
+    Forms![タック1枚印刷フォーム]![敬称] = Me.敬称
+
+End Sub
+
+Private Sub コマンド22_Click()
+    Dim text As String
+    
+    'テキストファイルに変換する
+    DoCmd.OpenForm "テキスト表示"
+    text = "〒" & Left(Me![郵便番号], 3) & "-" & Mid(Me![郵便番号], 4, 4) & Chr(13) & Chr(10) & Chr(13) & Chr(10)
+    text = text & Me![住所1] & Chr(13) & Chr(10)
+    If (Not IsNull(Me.住所2)) Then
+        If Len(Me.住所2) Then
+            text = text & Me![住所2] & Chr(13) & Chr(10)
+        End If
+    End If
+    If (Not IsNull(Me.住所3)) Then
+        If Len(Me.住所3) Then
+            text = text & Me![住所3] & Chr(13) & Chr(10)
+        End If
+    End If
+    text = text & Chr(13) & Chr(10)
+    text = text & Me![氏名] & " " & Me![敬称]
+    Forms![テキスト表示]![text] = text
+    
+End Sub
+
+'
+'文字列を追加で入力するために [F2] キーを押す のを自動的に行う。
+'Enter のイベント : フォーカスを取得したら発生する
+'GotFocus のイベント : Enter の次に発生する。
+'  他のフォームからフォーカスが帰ってきた時には Enter は発生せずに GotFocus のみが発生する。
+'  他のフォームを閉じて自動的にフォーカスが戻った場合はイベントは発生しない。(困った)
+'
+Private Sub 住所1_GotFocus()
+    SendKeys "{F2}"
+End Sub
+
+Private Sub 住所2_GotFocus()
+    SendKeys "{F2}"
+End Sub
+
+Private Sub じゅうしょ1_GotFocus()
+    SendKeys "{F2}"
+End Sub
+
+Private Sub じゅうしょ2_GotFocus()
+    SendKeys "{F2}"
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+    refresh_link '郵便番号変換ができるようにリンクテーブルを変更する
+    コントロール名設定Sub Me
+    'C_Uban = me![郵便番号]
+    'C_J1 = me![住所1]
+    'C_J2 = me![住所2]
+    'C_F1 = me![ふりがな1]
+    'C_F2 = me![ふりがな2]
+    'と実行しているだけ
+    '郵便番号の検索するもとのデータとその結果を書込む場所を指定する
+    
+    DoCmd.OpenForm "名簿一覧フォーム"
+End Sub
+
+Private Sub 郵便番号_AfterUpdate()
+    コントロール名設定Sub Me
+    郵便番号_AfterUpdate_処理
+End Sub
+
+Private Sub 郵便番号_Exit(Cancel As Integer)
+    コントロール名設定Sub Me
+    郵便番号_Exit_処理
+End Sub

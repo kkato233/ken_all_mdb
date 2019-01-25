@@ -1,0 +1,174 @@
+Option Compare Database
+Option Explicit
+
+'2007.11.30 データベースと同じディレクトリにある ken_all変換.mdb に自動的にリンクする。
+
+Public Function refresh_link() As Boolean
+'全ての外部リンクを無条件に更新するプログラム
+
+    refresh_link = refresh_all_link(True)  'true = 無条件に更新
+
+End Function
+
+
+'リンクが無効になっている場合にのみリンクを更新する。
+Public Function check_and_refresh_link() As Boolean
+    
+    check_and_refresh_link = refresh_all_link(False)  'false = 調べて更新
+
+End Function
+
+Public Function refresh_all_link(must_exec As Boolean) As Boolean
+'すべてのリンクテーブルについてリンクが正常にできているかどうかを調べる。
+    Dim link_data_table As String 'リンクのデータを記録したテーブル
+    Dim table_name As String
+    Dim file_name As String
+    Dim path_name As String
+    Dim db As Database
+    Dim link_rs As Recordset
+    Dim ID As Long
+    Dim ok As Boolean
+    Dim done As Boolean
+    Dim link_error_table As String
+    Dim tmp
+    Dim n As Long
+    Dim i As Long
+    Dim change_count As Long
+    Dim link_table(10) As String
+    Dim link_table_count As Integer
+    
+    Dim link_mdb_filename As String
+    
+    link_mdb_filename = "ken_all変換.mdb"
+    link_table(1) = "U_SUB"
+    link_table(2) = "U_番号"
+    link_table(3) = "U_企業"
+    link_table_count = 3
+    
+    change_count = 0
+    link_error_table = ""
+    ok = True
+    
+    path_name = MyDatabaseDir()
+    For i = 1 To link_table_count 'すべてのリンクテーブルについて調べる
+        table_name = link_table(i)
+        If must_exec Or (check_link(table_name) = False) Then  'リンクが正常に貼られていない '強制リンクにも対応
+            done = exec_refresh_link(table_name, path_name & "\" & link_mdb_filename) 'リンクを貼りなおすプログラムの実行
+            If done = False Then  '正常に終了しなかった
+                ok = False
+                link_error_table = link_error_table & table_name & " "
+            End If
+            change_count = change_count + 1
+        End If
+    Next
+    
+    If ok = False Then
+        MsgBox link_error_table & "のリンクを正常に貼ることができませんでした。" & link_mdb_filename & " を同じディレクトリに置いてください。"
+        refresh_all_link = False
+    Else
+        refresh_all_link = True
+    End If
+    
+End Function
+
+'リンクを貼りなおすプログラム
+'リンクを貼る候補のパス名を指定して
+Function exec_refresh_link(table_name As String, mdb_file_path As String) As Boolean
+    Dim rs As Recordset
+    Dim s As String
+    Dim now_db_path As String
+    Dim search_file_name As String
+            
+    search_file_name = mdb_file_path
+    
+    Dim fso As New FileSystemObject
+    
+    On Error GoTo no_file_or_dir
+    Dim fileCheck As Boolean
+    fileCheck = False
+    If fso.FileExists(search_file_name) Then
+        fileCheck = True
+    End If
+
+    
+    If fileCheck Then
+        'ファイルが見つかった
+        'リンクを設定しなおす
+        'リンクの削除
+        On Error Resume Next
+        DoCmd.DeleteObject acTable, table_name
+        On Error GoTo error_in_refresh
+       'リンクの設定
+        DoCmd.TransferDatabase acLink, "Microsoft Access", _
+            search_file_name, , table_name, table_name, False
+        On Error GoTo 0
+        exec_refresh_link = True
+    Else 'ファイルが見つからずに設定ができなかった
+        'DBF ファイル対応
+        exec_refresh_link = False
+        'MsgBox "ファイル " & search_file_name & "が見つからないため" & table_name & "が使えません"
+    End If
+
+
+exit_in_refresh:
+
+    Exit Function
+
+error_in_refresh:
+    
+    MsgBox Err.Description
+    exec_refresh_link = False
+    Resume exit_in_refresh
+    
+no_file_or_dir:
+    MsgBox "ファイル " & search_file_name & "が見つからないため" & table_name & "が使えません"
+    exec_refresh_link = False
+    Resume exit_in_refresh
+    
+End Function
+
+'table_name で指定されるテーブルが正常にリンクされているかどうかをチェックする。
+'Solution Databaseを参考にしました。
+
+Function check_link(table_name As String) As Boolean
+' リンクが有効な場合は、True を返します。
+    
+    Dim dbs As Database, rst As Recordset
+    
+    Set dbs = CurrentDb
+
+    ' 接続情報が正しい場合。リンク テーブルを開きます。
+    On Error Resume Next
+    Set rst = dbs.OpenRecordset(table_name)
+
+    ' エラーが発生しない場合、True を返します。
+    If Err = 0 Then
+        check_link = True
+        rst.Close
+    Else
+        check_link = False
+    End If
+    
+End Function
+
+
+
+
+Function MyDatabaseDir() As String
+    Dim DirNow As String, FullPass As String, MyName As String
+    Dim i As Integer
+    FullPass = CurrentDb.Name
+    For i = 1 To Len(FullPass)
+        If InStr(Right(FullPass, i), "\") > 0 Then Exit For
+    Next i
+    If i = Len(FullPass) Then
+        MsgBox "自動処理失敗！ Dirを確認できませんでした。"
+        MyDatabaseDir = ""
+        Exit Function
+    End If                                              '最後の\位置は右からi文字目
+    MyName = Right(FullPass, i - 1)
+    DirNow = Left(FullPass, Len(FullPass) - i)          '最後の\を含めない
+    
+    MyDatabaseDir = DirNow
+
+End Function

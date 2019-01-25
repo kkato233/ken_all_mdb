@@ -1,0 +1,22 @@
+Option Compare Database
+Option Explicit
+
+Public str As String
+
+Public Function C_ZŠŒŸõ()
+    Dim search As String
+    
+    search = "like" & Chr(34) & CStr(str) & Chr(42) & Chr(34)
+    
+    If (IsNull(str)) Then
+        C_ZŠŒŸõ = "*"
+    Else
+        C_ZŠŒŸõ = search
+    End If
+End Function
+
+Public Sub ŒŸõZŠİ’è(st As String)
+
+    str = st
+
+End Sub

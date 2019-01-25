@@ -1,0 +1,24 @@
+Version =196611
+ColumnsShown =0
+Begin
+    Action ="RunCode"
+    Argument ="check_and_refresh_link () "
+End
+Begin
+    Action ="Minimize"
+End
+Begin
+    Action ="OpenForm"
+    Argument ="–¼•ë“ü—ÍƒtƒH[ƒ€"
+    Argument ="0"
+    Argument =""
+    Argument =""
+    Argument ="-1"
+    Argument ="0"
+End
+Begin
+    Action ="GoToRecord"
+    Argument ="-1"
+    Argument =""
+    Argument ="5"
+End

@@ -1,0 +1,345 @@
+Version =17
+VersionRequired =17
+Checksum =-99210094
+Begin Form
+    AutoCenter = NotDefault
+    DefaultView =0
+    TabularCharSet =128
+    TabularFamily =50
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5215
+    DatasheetFontHeight =9
+    ItemSuffix =25
+    Left =2580
+    Top =585
+    Right =8085
+    Bottom =4560
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x9dd4835a3ca6e140
+    End
+    RecordSource ="名簿"
+    Caption ="名簿"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="ＭＳ Ｐゴシック"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =128
+            TextFontFamily =50
+            FontSize =9
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            AutoLabel = NotDefault
+            SpecialEffect =2
+            TextFontCharSet =128
+            TextFontFamily =50
+            FontSize =9
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="フォームヘッダー"
+        End
+        Begin Section
+            Height =3968
+            BackColor =-2147483633
+            Name ="詳細"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1677
+                    Top =114
+                    Width =1701
+                    ColumnWidth =1701
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="ID"
+                    ControlSource ="ID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =114
+                            Width =1560
+                            Height =240
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="IDラベル"
+                            Caption ="ID"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMEMode =1
+                    Left =1677
+                    Top =566
+                    Width =2175
+                    ColumnWidth =2310
+                    TabIndex =1
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="氏名"
+                    ControlSource ="氏名"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Top =566
+                            Width =1560
+                            Height =240
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="氏名ラベル"
+                            Caption ="氏名"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMEMode =2
+                    Left =1676
+                    Top =1247
+                    Width =1215
+                    ColumnWidth =705
+                    TabIndex =3
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="郵便番号"
+                    ControlSource ="郵便番号"
+                    AfterUpdate ="[Event Procedure]"
+                    OnExit ="[Event Procedure]"
+                    InputMask ="\\〒000\\-9999;;_"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =56
+                            Top =1247
+                            Width =1560
+                            Height =240
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="郵便番号ラベル"
+                            Caption ="郵便番号"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMEMode =1
+                    Left =1676
+                    Top =1587
+                    Width =3420
+                    ColumnWidth =2310
+                    TabIndex =4
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="住所1"
+                    ControlSource ="住所1"
+                    OnGotFocus ="[Event Procedure]"
+                    ControlTipText ="「-」は半角 数字は全角か漢字を使用すると見栄えがよくなります。"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =56
+                            Top =1587
+                            Width =1560
+                            Height =240
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="住所1ラベル"
+                            Caption ="住所1"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMEMode =1
+                    Left =1676
+                    Top =1927
+                    Width =3420
+                    ColumnWidth =2310
+                    TabIndex =5
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="住所2"
+                    ControlSource ="住所2"
+                    OnGotFocus ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =56
+                            Top =1927
+                            Width =1560
+                            Height =240
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="住所2ラベル"
+                            Caption ="住所2"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =1700
+                    Top =2267
+                    Width =3396
+                    Height =1020
+                    TabIndex =6
+                    Name ="コメント"
+                    ControlSource ="コメント"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextFontFamily =34
+                            Top =2267
+                            Width =660
+                            Height =225
+                            Name ="ラベル16"
+                            Caption ="コメント:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =247
+                    IMEMode =1
+                    Left =1677
+                    Top =793
+                    Width =2175
+                    TabIndex =2
+                    BackColor =-2147483643
+                    ForeColor =-2147483640
+                    Name ="テキスト17"
+                    ControlSource ="氏名2"
+                End
+                Begin CheckBox
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =3004
+                    Top =1279
+                    TabIndex =7
+                    Name ="年賀状"
+                    ControlSource ="年賀状"
+                    DefaultValue ="True"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =3236
+                            Top =1247
+                            Width =1125
+                            Height =210
+                            Name ="ラベル19"
+                            Caption ="年賀状を出す"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =4592
+                    Top =1247
+                    Width =135
+                    TabIndex =8
+                    Name ="県名"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =4705
+                    Top =113
+                    Width =270
+                    TabIndex =9
+                    Name ="けん"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =93
+                    Left =4705
+                    Top =473
+                    Width =270
+                    TabIndex =10
+                    Name ="じゅうしょ2"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =87
+                    Left =4705
+                    Top =737
+                    Width =270
+                    TabIndex =11
+                    Name ="じゅうしょ1"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="フォームフッター"
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+'
+'文字列を追加で入力するために [F2] キーを押す のを自動的に行う。
+'Enter のイベント : フォーカスを取得したら発生する
+'GotFocus のイベント : Enter の次に発生する。
+'  他のフォームからフォーカスが帰ってきた時には Enter は発生せずに GotFocus のみが発生する。
+'  他のフォームを閉じて自動的にフォーカスが戻った場合はイベントは発生しない。(困った)
+'
+Private Sub 住所1_GotFocus()
+    SendKeys "{F2}"
+End Sub
+
+Private Sub 住所2_GotFocus()
+    SendKeys "{F2}"
+End Sub
+
+Private Sub じゅうしょ1_GotFocus()
+    SendKeys "{F2}"
+End Sub
+
+Private Sub じゅうしょ2_GotFocus()
+    SendKeys "{F2}"
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+    コントロール名設定Sub Me
+    'C_Uban = me![郵便番号]
+    'C_J1 = me![住所1]
+    'C_J2 = me![住所2]
+    'C_F1 = me![ふりがな1]
+    'C_F2 = me![ふりがな2]
+    'と実行しているだけ
+    '郵便番号の検索するもとのデータとその結果を書込む場所を指定する
+End Sub
+
+Private Sub 郵便番号_AfterUpdate()
+    郵便番号_AfterUpdate_処理
+End Sub
+
+Private Sub 郵便番号_Exit(Cancel As Integer)
+    郵便番号_Exit_処理
+End Sub

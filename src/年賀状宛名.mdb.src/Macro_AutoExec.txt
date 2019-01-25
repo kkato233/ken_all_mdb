@@ -1,0 +1,14 @@
+Version =131074
+ColumnsShown =0
+Begin
+    Action ="Minimize"
+End
+Begin
+    Action ="OpenForm"
+    Argument ="‚Í‚ª‚«ˆóüƒƒjƒ…["
+    Argument ="0"
+    Argument =""
+    Argument =""
+    Argument ="-1"
+    Argument ="0"
+End

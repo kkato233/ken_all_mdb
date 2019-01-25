@@ -1,0 +1,182 @@
+Version =17
+VersionRequired =17
+Checksum =100651882
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    TabularCharSet =128
+    TabularFamily =50
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =4652
+    DatasheetFontHeight =9
+    ItemSuffix =37
+    Left =2145
+    Top =15
+    Right =8160
+    Bottom =5610
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x41a8c735d0b3e140
+    End
+    RecordSource ="ñºïÎ"
+    DatasheetFontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+    PrtMip = Begin
+        0x6e040000e102000053030000c0030000000000009b1200006a09000000000000 ,
+        0x020000007100000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x4550534f4e204d4a2d3530300000000000000000000000000000000000000000 ,
+        0x0004010494004000036600040100090000000000000001002001680101000100 ,
+        0x6801010000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000020000000000000000000000010040004d53554413034550 ,
+        0x534f4e204d4a2d35303000000000000000000000000000000000000000008400 ,
+        0x00000000000025010000000000006400000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080011001e00010077696e73706f6f6c004550534f4e204d4a2d353030005c5c ,
+        0x50632d393832317631305c6d6a2d353030000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    OnActivate ="[Event Procedure]"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =128
+            TextFontFamily =2
+            FontSize =9
+            FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+        End
+        Begin TextBox
+            OldBorderStyle =0
+            TextFontCharSet =128
+            TextFontFamily =2
+            Width =1701
+            Height =225
+            LabelX =-1701
+            FontSize =9
+            FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+        End
+        Begin PageHeader
+            Height =567
+            OnFormat ="[Event Procedure]"
+            Name ="ÉyÅ[ÉWÉwÉbÉ_Å["
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =2382
+            Name ="è⁄ç◊"
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =1
+                    TextFontFamily =18
+                    Left =1023
+                    Top =226
+                    Width =3226
+                    Height =411
+                    FontSize =12
+                    FontWeight =700
+                    Name ="ÉeÉLÉXÉg2"
+                    ControlSource ="=\"Åß\" & Left([óXï÷î‘çÜ],3) & \"-\" & Mid([óXï÷î‘çÜ],4)"
+                    FontName ="ÇlÇr Çoñæí©"
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =1
+                    TextFontFamily =18
+                    Left =1023
+                    Top =737
+                    Width =3571
+                    Height =355
+                    FontSize =10
+                    TabIndex =1
+                    Name ="ÉeÉLÉXÉg4"
+                    ControlSource ="èZèä1"
+                    FontName ="ÇlÇr Çoñæí©"
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =1
+                    TextFontFamily =18
+                    Left =1023
+                    Top =1142
+                    Width =3571
+                    Height =340
+                    FontSize =10
+                    TabIndex =2
+                    Name ="ÉeÉLÉXÉg5"
+                    ControlSource ="èZèä2"
+                    FontName ="ÇlÇr Çoñæí©"
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =2
+                    TextFontFamily =18
+                    Left =963
+                    Top =1682
+                    Width =2506
+                    Height =396
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="ÉeÉLÉXÉg7"
+                    ControlSource ="éÅñº"
+                    FontName ="ÇlÇr Çoñæí©"
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextFontFamily =18
+                    Left =1023
+                    Top =1530
+                    Width =3569
+                    Height =125
+                    FontSize =10
+                    TabIndex =4
+                    Name ="ÉeÉLÉXÉg29"
+                    ControlSource ="èZèä3"
+                    FontName ="ÇlÇr Çoñæí©"
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =1
+                    TextFontFamily =18
+                    Left =3514
+                    Top =1682
+                    Width =1036
+                    Height =396
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="ÉeÉLÉXÉg36"
+                    ControlSource ="åhèÃ"
+                    FontName ="ÇlÇr Çoñæí©"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =226
+            OnFormat ="[Event Procedure]"
+            Name ="ÉyÅ[ÉWÉtÉbÉ^Å["
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit

@@ -1,0 +1,319 @@
+Version =20
+VersionRequired =20
+Checksum =-1280516164
+Begin Form
+    AllowAdditions = NotDefault
+    TabularCharSet =128
+    TabularFamily =50
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6735
+    DatasheetFontHeight =9
+    ItemSuffix =11
+    Left =8565
+    Top =240
+    Right =15585
+    Bottom =8430
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x5160d925d0b3e140
+    End
+    RecordSource ="名簿"
+    Caption ="名簿一覧"
+    DatasheetFontName ="ＭＳ Ｐゴシック"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =128
+            TextFontFamily =50
+            FontSize =9
+            BackColor =-2147483633
+            ForeColor =-2147483630
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            SpecialEffect =3
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            TextFontCharSet =128
+            TextFontFamily =50
+            Width =1701
+            Height =390
+            FontSize =9
+            FontWeight =400
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            SpecialEffect =2
+            TextFontCharSet =128
+            TextFontFamily =50
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            TextFontCharSet =128
+            TextFontFamily =50
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =9
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            TextFontCharSet =128
+            TextFontFamily =50
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin Subform
+            SpecialEffect =2
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            TextFontCharSet =128
+            TextFontFamily =50
+            Width =283
+            Height =283
+            FontSize =9
+            FontWeight =400
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin Tab
+            TextFontCharSet =128
+            TextFontFamily =50
+            BackStyle =0
+            Width =5103
+            Height =3402
+            FontSize =9
+            FontName ="ＭＳ Ｐゴシック"
+        End
+        Begin FormHeader
+            Height =930
+            BackColor =-2147483633
+            Name ="フォームヘッダー"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Top =660
+                    Width =2310
+                    Height =225
+                    Name ="氏名ラベル"
+                    Caption ="氏名"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2400
+                    Top =660
+                    Width =2310
+                    Height =225
+                    Name ="住所1ラベル"
+                    Caption ="住所1"
+                    Tag ="DetachedLabel"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4845
+                    Top =45
+                    Width =780
+                    Height =270
+                    Name ="コマンド5"
+                    Caption ="全印刷"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5775
+                    Top =45
+                    Width =915
+                    Height =270
+                    TabIndex =1
+                    Name ="コマンド6"
+                    Caption ="ﾏｰｸ 印刷"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =5985
+                    Top =690
+                    Width =750
+                    Height =225
+                    Name ="ラベル7"
+                    Caption ="印刷ﾏｰｸ"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =105
+                    Top =30
+                    Width =2475
+                    Height =540
+                    FontSize =24
+                    Name ="ラベル8"
+                    Caption ="名簿一覧表"
+                End
+            End
+        End
+        Begin Section
+            Height =330
+            BackColor =-2147483633
+            Name ="詳細"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =57
+                    Top =57
+                    Width =1530
+                    ColumnWidth =2310
+                    Name ="氏名"
+                    ControlSource ="氏名"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2424
+                    Top =57
+                    Width =2775
+                    ColumnWidth =2310
+                    TabIndex =1
+                    Name ="住所1"
+                    ControlSource ="住所1"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5280
+                    Top =60
+                    Width =600
+                    Height =270
+                    TabIndex =2
+                    Name ="コマンド4"
+                    Caption ="表示"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =6225
+                    Top =60
+                    TabIndex =3
+                    Name ="印刷ﾏｰｸ"
+                    ControlSource ="印刷ﾏｰｸ"
+                    StatusBarText ="印刷を行なうかどうか？"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1644
+                    Top =56
+                    Width =737
+                    Height =227
+                    TabIndex =4
+                    Name ="連名"
+                    ControlSource ="連名"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="フォームフッター"
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub コマンド4_Click()
+    Dim a As Long
+    If Not IsNull(Me.ID) Then
+        a = Me.ID
+        DoCmd.OpenForm "名簿入力フォーム"
+        Forms!名簿入力フォーム!ID.SetFocus
+        DoCmd.FindRecord a
+    End If
+End Sub
+
+Private Sub コマンド5_Click()
+    On Error GoTo er
+    DoCmd.OpenReport "ラベル印刷", acViewPreview
+    
+exit_er:
+    Exit Sub
+er:
+    MsgBox Err.Description
+    Resume exit_er
+End Sub
+
+Private Sub コマンド6_Click()
+    On Error GoTo er
+    Me.Refresh
+    DoCmd.OpenReport "ラベル印刷", acViewPreview, , "[印刷ﾏｰｸ]=True"
+    
+exit_er:
+    Exit Sub
+er:
+    MsgBox Err.Description
+    Resume exit_er
+
+End Sub

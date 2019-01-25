@@ -1,0 +1,545 @@
+Version =19
+VersionRequired =19
+Checksum =99771252
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =5047
+    DatasheetFontHeight =10
+    ItemSuffix =51
+    Left =3585
+    Right =10545
+    Bottom =5850
+    DatasheetGridlinesColor =12632256
+    OnNoData ="[Event Procedure]"
+    RecSrcDt = Begin
+        0x9f24362d49a6e140
+    End
+    RecordSource ="îNâÍèÛàÛç¸ëIë"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x060000008c020000ac000000c003000000000000b71300006e1a000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c0090000366000401002b0000000000640001002001680101000100 ,
+        0x6801010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =2
+            FontName ="Arial"
+        End
+        Begin Rectangle
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin TextBox
+            OldBorderStyle =0
+            TextFontFamily =2
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =6766
+            OnFormat ="[Event Procedure]"
+            Name ="Detail"
+            Begin
+                Begin TextBox
+                    Vertical = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =4015
+                    Top =934
+                    Width =810
+                    Height =5502
+                    FontSize =14
+                    Name ="tbound2"
+                    ControlSource ="èZèä1"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Vertical = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =3542
+                    Top =1217
+                    Width =397
+                    Height =4423
+                    FontSize =14
+                    TabIndex =1
+                    Name ="tbound3"
+                    ControlSource ="èZèä2"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Vertical = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =2625
+                    Top =1694
+                    Width =567
+                    Height =3889
+                    FontSize =20
+                    TabIndex =2
+                    Name ="tbound5"
+                    ControlSource ="éÅñº"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Vertical = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =2625
+                    Top =5582
+                    Width =567
+                    Height =851
+                    FontSize =18
+                    TabIndex =3
+                    Name ="tbound6_Sub1"
+                    ControlSource ="åhèÃ"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    Vertical = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =1048
+                    Top =2574
+                    Width =305
+                    Height =3501
+                    FontSize =9
+                    TabIndex =4
+                    Name ="tbound8"
+                    ControlSource ="ç∑èoêlèZèä1"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    Vertical = NotDefault
+                    TextFontCharSet =128
+                    TextAlign =2
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =141
+                    Top =3311
+                    Width =327
+                    Height =2775
+                    FontSize =12
+                    TabIndex =5
+                    Name ="tbound9"
+                    ControlSource ="ç∑èoêléÅñº"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =2352
+                    Top =533
+                    Width =1416
+                    Height =255
+                    TabIndex =6
+                    ForeColor =15266032
+                    Name ="tbound1"
+                    ControlSource ="óXï÷î‘çÜ"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                    InputMask ="\\Åß000\\-9999;;_"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    TextFontFamily =34
+                    BackStyle =0
+                    Left =2101
+                    Top =6320
+                    Width =291
+                    Height =345
+                    TabIndex =7
+                    Name ="tbound7"
+                    ControlSource ="ç∑èoêlóXï÷î‘çÜ"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =2352
+                    Top =23
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =8
+                    Name ="tbound1_sub1"
+                    ControlSource ="=Mid([tbound1],1,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =2744
+                    Top =23
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =9
+                    Name ="tbound1_sub2"
+                    ControlSource ="=Mid([tbound1],2,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =3129
+                    Top =23
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =10
+                    Name ="tbound1_sub3"
+                    ControlSource ="=Mid([tbound1],3,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =3572
+                    Top =23
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =11
+                    Name ="tbound1_sub4"
+                    ControlSource ="=IIf(Mid([tbound1],4,1)=\"-\",Mid([tbound1],5,1),Mid([tbound1],4,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =3951
+                    Top =23
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =12
+                    Name ="tbound1_sub5"
+                    ControlSource ="=IIf(Mid([tbound1],4,1)=\"-\",Mid([tbound1],6,1),Mid([tbound1],5,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =4326
+                    Top =23
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =13
+                    Name ="tbound1_sub6"
+                    ControlSource ="=IIf(Mid([tbound1],4,1)=\"-\",Mid([tbound1],7,1),Mid([tbound1],6,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =4723
+                    Top =23
+                    Width =324
+                    Height =454
+                    FontSize =18
+                    TabIndex =14
+                    Name ="tbound1_sub7"
+                    ControlSource ="=IIf(Mid([tbound1],4,1)=\"-\",Mid([tbound1],8,1),Mid([tbound1],7,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =141
+                    Top =6316
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =15
+                    Name ="tbound7_sub1"
+                    ControlSource ="=Mid([tbound7],1,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =368
+                    Top =6316
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =16
+                    Name ="tbound7_sub2"
+                    ControlSource ="=Mid([tbound7],2,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =595
+                    Top =6316
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =17
+                    Name ="tbound7_sub3"
+                    ControlSource ="=Mid([tbound7],3,1)"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =878
+                    Top =6316
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =18
+                    Name ="tbound7_sub4"
+                    ControlSource ="=IIf(Mid([tbound7],4,1)=\"-\",Mid([tbound7],5,1),Mid([tbound7],4,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =1105
+                    Top =6316
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =19
+                    Name ="tbound7_sub5"
+                    ControlSource ="=IIf(Mid([tbound7],4,1)=\"-\",Mid([tbound7],6,1),Mid([tbound7],5,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =1332
+                    Top =6316
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =20
+                    Name ="tbound7_sub6"
+                    ControlSource ="=IIf(Mid([tbound7],4,1)=\"-\",Mid([tbound7],7,1),Mid([tbound7],6,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =49
+                    BackStyle =0
+                    Left =1559
+                    Top =6316
+                    Width =227
+                    Height =450
+                    FontSize =13
+                    TabIndex =21
+                    Name ="tbound7_sub7"
+                    ControlSource ="=IIf(Mid([tbound7],4,1)=\"-\",Mid([tbound7],8,1),Mid([tbound7],7,1))"
+                    FontName ="ÇlÇr ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    Vertical = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =2078
+                    Top =1690
+                    Width =567
+                    Height =3889
+                    FontSize =20
+                    TabIndex =22
+                    Name ="tbound10"
+                    ControlSource ="éÅñº2"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    Vertical = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =743
+                    Top =2574
+                    Width =305
+                    Height =3501
+                    FontSize =9
+                    TabIndex =23
+                    Name ="ÉeÉLÉXÉg0"
+                    ControlSource ="ç∑èoêlèZèä2"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    Vertical = NotDefault
+                    TextFontCharSet =128
+                    TextAlign =1
+                    TextFontFamily =18
+                    BackStyle =0
+                    Left =492
+                    Top =3311
+                    Width =222
+                    Height =2775
+                    FontSize =10
+                    TabIndex =24
+                    Name ="å®èëÇ´"
+                    ControlSource ="ç∑èoêlå®èëÇ´"
+                    FontName ="HGê≥û≤èëëÃ-PRO"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =367
+                    Top =473
+                    Width =1416
+                    Height =255
+                    TabIndex =25
+                    Name ="éÅñºî˜í≤êÆ"
+                    ControlSource ="éÅñºî˜í≤êÆ"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TextFontCharSet =128
+                    TextFontFamily =50
+                    BackStyle =0
+                    Left =197
+                    Top =2290
+                    Width =1416
+                    Height =255
+                    TabIndex =26
+                    Name ="ÉeÉLÉXÉg8"
+                    ControlSource ="à íuí≤êÆ1"
+                    FontName ="ÇeÇ` Ço ÉSÉVÉbÉN"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Dim éÅñºèâä˙à íu1 As Integer
+Dim éÅñºèâä˙à íu2 As Integer
+Dim ç∑èoêlèâä˙à íu As Integer
+
+Private Sub Detail_Format(Cancel As Integer, FormatCount As Integer)
+    à íuí≤êÆ
+End Sub
+
+Private Sub Report_NoData(Cancel As Integer)
+    MsgBox "àÛç¸ÉfÅ[É^Ç™Ç†ÇËÇ‹ÇπÇÒÅB"
+    Cancel = True
+End Sub
+
+Private Sub Report_Open(Cancel As Integer)
+    éÅñºèâä˙à íu1 = Me![tbound5].Left
+    ç∑èoêlèâä˙à íu = Me![tbound9].Left
+    éÅñºèâä˙à íu2 = Me![tbound10].Left
+End Sub
+
+Sub à íuí≤êÆ()
+    Dim x1, x2 As Integer
+    If IsNull(Me![éÅñºî˜í≤êÆ]) Then
+        x1 = 0
+    Else
+        x1 = Me![éÅñºî˜í≤êÆ]
+    End If
+    If IsNull(Me![à íuí≤êÆ1]) Then
+        x2 = 0
+    Else
+        x2 = Me![à íuí≤êÆ1]
+    End If
+    Me![tbound5].Left = éÅñºèâä˙à íu1 + x1
+    Me![tbound6_Sub1].Left = éÅñºèâä˙à íu1 + x1
+    Me![tbound10].Left = éÅñºèâä˙à íu2 + x1
+    Me![tbound9].Left = ç∑èoêlèâä˙à íu + x2
+End Sub

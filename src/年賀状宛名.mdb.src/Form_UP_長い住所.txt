@@ -1,0 +1,150 @@
+Version =19
+VersionRequired =19
+Checksum =-100651886
+Begin Form
+    PopUp = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    DefaultView =0
+    TabularCharSet =128
+    TabularFamily =50
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6292
+    DatasheetFontHeight =9
+    ItemSuffix =5
+    Left =5985
+    Top =3090
+    Right =14055
+    Bottom =8985
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x756ec601374be240
+    End
+    DatasheetFontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Section
+            Height =3855
+            BackColor =-2147483633
+            Name ="è⁄ç◊"
+            GUID = Begin
+                0x90f42f94de6d5443843023e3c9eb84fb
+            End
+            Begin
+                Begin TextBox
+                    SpecialEffect =2
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    Left =340
+                    Top =737
+                    Width =5045
+                    Height =1417
+                    FontSize =9
+                    Name ="ëSèZèä"
+                    FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+                    GUID = Begin
+                        0x84dbd8e6c099934f8e9fa4a83be07d8b
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    Left =113
+                    Top =113
+                    Width =5336
+                    Height =510
+                    FontSize =9
+                    Name ="ÉâÉxÉã2"
+                    Caption ="í∑Ç¢èZèäÇ»ÇÃÇ≈ÅuÉRÉsÅ[Åv Åï ÅuÉyÅ[ÉXÉgÅv ÇµÇƒÇ≤égópâ∫Ç≥Ç¢ÅB"
+                    FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+                    GUID = Begin
+                        0x2627468cd6f6434cbc33784a5dacf354
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    Left =5499
+                    Top =396
+                    Width =576
+                    Height =576
+                    FontSize =9
+                    FontWeight =400
+                    TabIndex =1
+                    Name ="ï¬Ç∂ÇÈ"
+                    Caption ="ÉRÉ}ÉìÉh3"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000019000000180000000100040000000000800100000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00888888888888888888888888888888888888888808888888 ,
+                        0x8888888888888888888888800888888888888888888888888888880308888888 ,
+                        0x8888888888888888888880330888888888888888888888888888033308888888 ,
+                        0x8888888888888888888033330888888888888888888888880003333300000000 ,
+                        0x0000888888888888880333330ffff0888888888888888888880333330ffff088 ,
+                        0x8888888888888888880333300ffff0888888888888888888880333330ffff088 ,
+                        0x8888488888888888880333330ffff0888884488888888888880333330ffff088 ,
+                        0x8844488888888888880333330ffff0888444444488888888880333330ffff088 ,
+                        0x4444444488888888880333330ffff0884444444488888888880333330ffff088 ,
+                        0x844444448888888888033330fffff08888444888888800008803330ffffff088 ,
+                        0x8884488888880fff880330fffffff0888888488888880fff88030ffffffff088 ,
+                        0x88888888888800008800fffffffff08888888888888888888800000000000088 ,
+                        0x8888888888888888
+                    End
+                    FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Ã´∞—Çï¬Ç∂ÇÈ"
+                    GUID = Begin
+                        0xf877e8369d467a4ba58a0088f13c2130
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontCharSet =128
+                    Left =340
+                    Top =2274
+                    Width =5045
+                    Height =1417
+                    FontSize =9
+                    TabIndex =2
+                    Name ="JyuSho"
+                    FontName ="ÇlÇr ÇoÉSÉVÉbÉN"
+                    GUID = Begin
+                        0x6d75e1cc1cad1e4e9c98dae7a9f33d0d
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub ï¬Ç∂ÇÈ_Click()
+On Error GoTo Err_ï¬Ç∂ÇÈ_Click
+
+
+    DoCmd.Close
+
+Exit_ï¬Ç∂ÇÈ_Click:
+    Exit Sub
+
+Err_ï¬Ç∂ÇÈ_Click:
+    MsgBox Err.Description
+    Resume Exit_ï¬Ç∂ÇÈ_Click
+    
+End Sub

@@ -1,0 +1,11 @@
+ID	adInteger	4
+”­‘—æ—X•Ö”Ô†	adVarWChar	50
+”­‘—æZŠ1	adVarWChar	70
+”­‘—æZŠ2	adVarWChar	70
+”­‘—æZŠ3	adVarWChar	70
+”­‘—æ–¼	adVarWChar	50
+”­‘—æŒhÌ	adVarWChar	50
+
+		ID
+		Index	PrimaryKey
+		Index	”­‘—æ—X•Ö”Ô†
