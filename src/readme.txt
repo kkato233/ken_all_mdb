@@ -6,10 +6,10 @@
 【 製 作 者 】kkato233
 【  種  別  】フリーソフト
 【 開発環境 】Access 2013
-【 動作環境 】Windows XP 以降 / Access 2003 以降
-【バージョン】1.10
-【最終更新日】2019.03.09
-【ファイル名】ken_all_mdb110.zip
+【 動作環境 】Windows XP 以降 / Access 2007 以降
+【バージョン】1.11
+【最終更新日】2020.01.20
+【ファイル名】ken_all_mdb111.zip
 【 ウ ェ ブ 】https://github.com/kkato233/ken_all_mdb
 
 ---------- ----------
