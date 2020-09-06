@@ -1,48 +1,48 @@
 ========== ========== ========== ==========
-  Access —X•Ö”Ô†“ü—ÍŽx‰‡   ver. 1.13
+  Access éƒµä¾¿ç•ªå·å…¥åŠ›æ”¯æ´   ver. 1.13
 ========== ========== ========== ==========
 
-y ƒ\ƒtƒg–¼ zAccess —X•Ö”Ô†“ü—ÍŽx‰‡
-y » ì ŽÒ zkkato233
-y  Ží  •Ê  zƒtƒŠ[ƒ\ƒtƒg
-y ŠJ”­ŠÂ‹« zMicrosoft Access 
-y “®ìŠÂ‹« zWindows 10 ˆÈ~ / Access 2016 ˆÈ~
-yƒo[ƒWƒ‡ƒ“z1.13
-yÅIXV“úz2020.09.06
-yƒtƒ@ƒCƒ‹–¼zken_all_mdb113.zip
-y ƒE ƒF ƒu zhttps://github.com/kkato233/ken_all_mdb
+ã€ ã‚½ãƒ•ãƒˆå ã€‘Access éƒµä¾¿ç•ªå·å…¥åŠ›æ”¯æ´
+ã€ è£½ ä½œ è€… ã€‘kkato233
+ã€  ç¨®  åˆ¥  ã€‘ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆ
+ã€ é–‹ç™ºç’°å¢ƒ ã€‘Microsoft Access 
+ã€ å‹•ä½œç’°å¢ƒ ã€‘Windows 10 ä»¥é™ / Access 2016 ä»¥é™
+ã€ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã€‘1.13
+ã€æœ€çµ‚æ›´æ–°æ—¥ã€‘2020.09.06
+ã€ãƒ•ã‚¡ã‚¤ãƒ«åã€‘ken_all_mdb113.zip
+ã€ ã‚¦ ã‚§ ãƒ– ã€‘https://github.com/kkato233/ken_all_mdb
 
 ---------- ----------
-ž ŠT—v ž
-@—X­È‚ÌŒöŠJ‚µ‚Ä‚¢‚é12–œŒ‚Ì—X•Ö”Ô†ƒf[ƒ^‚ðŽg‚Á‚ÄAccess‚ÌZŠ“ü—Í‚ðŒø—¦‰»‚µ‚Ü‚·B
+â—‡ æ¦‚è¦ â—‡
+ã€€éƒµæ”¿çœã®å…¬é–‹ã—ã¦ã„ã‚‹12ä¸‡ä»¶ã®éƒµä¾¿ç•ªå·ãƒ‡ãƒ¼ã‚¿ã‚’ä½¿ã£ã¦Accessã®ä½æ‰€å…¥åŠ›ã‚’åŠ¹çŽ‡åŒ–ã—ã¾ã™ã€‚
 
-ž “®ìðŒ ž
-@Access 2016 ˆÈ~ ‚Ìƒo[ƒWƒ‡ƒ“
+â—‡ å‹•ä½œæ¡ä»¶ â—‡
+ã€€Access 2016 ä»¥é™ ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³
 
-ž ƒCƒ“ƒXƒg[ƒ‹ ž
-@zip ƒtƒ@ƒCƒ‹‚ð‰ð“€‚µ‚Ä ’†‚É‚ ‚é mdb ƒtƒ@ƒCƒ‹‚ðƒ}ƒCƒhƒLƒ…ƒƒ“ƒg“™‚Ì
-@ƒtƒHƒ‹ƒ_‚ÉƒRƒs[‚µ‚Ä‚­‚¾‚³‚¢B
+â—‡ ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ« â—‡
+ã€€zip ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è§£å‡ã—ã¦ ä¸­ã«ã‚ã‚‹ mdb ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒžã‚¤ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆç­‰ã®
+ã€€ãƒ•ã‚©ãƒ«ãƒ€ã«ã‚³ãƒ”ãƒ¼ã—ã¦ãã ã•ã„ã€‚
 
-ž Žg‚¢•û ž
-  œÅ‰‚É
-@@ZŠ“ü—Í.mdb ƒtƒ@ƒCƒ‹‚ðƒ_ƒuƒ‹ƒNƒŠƒbƒN‚µ‚ÄƒAƒvƒŠ‚ð‹N“®‚µ‚Ä‚­‚¾‚³‚¢B
-@@—X•Ö”Ô†‚ð“ü—Í‚·‚é‚ÆŽ©“®“I‚ÉZŠ‚ª“ü—Í‚³‚ê‚Ü‚·B
+â—‡ ä½¿ã„æ–¹ â—‡
+  â—æœ€åˆã«
+ã€€ã€€ä½æ‰€å…¥åŠ›.mdb ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã‚¢ãƒ—ãƒªã‚’èµ·å‹•ã—ã¦ãã ã•ã„ã€‚
+ã€€ã€€éƒµä¾¿ç•ªå·ã‚’å…¥åŠ›ã™ã‚‹ã¨è‡ªå‹•çš„ã«ä½æ‰€ãŒå…¥åŠ›ã•ã‚Œã¾ã™ã€‚
 
-  œƒJƒXƒ^ƒ}ƒCƒY
-@@‚ ‚é’ö“x Access ‚ÅŠJ”­‚Å‚«‚éƒmƒEƒnƒE‚ð‚¨Ž‚¿‚Ì•û‚Í
-@@ƒJƒXƒ^ƒ}ƒCƒY•û–@.txt ‚ðŒ©‚ÄƒvƒƒOƒ‰ƒ€‚ðƒJƒXƒ^ƒ}ƒCƒY‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+  â—ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚º
+ã€€ã€€ã‚ã‚‹ç¨‹åº¦ Access ã§é–‹ç™ºã§ãã‚‹ãƒŽã‚¦ãƒã‚¦ã‚’ãŠæŒã¡ã®æ–¹ã¯
+ã€€ã€€ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºæ–¹æ³•.txt ã‚’è¦‹ã¦ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-ž –ÆÓ ž
-@ìŽÒ‚ÍA‚±‚ÌƒvƒƒOƒ‰ƒ€‚ð—˜—p‚µ‚½‚±‚Æ‚É‚æ‚Á‚Ä”­¶‚µ‚½‚¢‚©‚È‚é–â‘è‚É‚àAÓ”C‚ð•‰‚¢‚Ü‚¹‚ñB
-@‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAƒ†[ƒU‚Ì‚¨Žg‚¢‚ÌŠÂ‹«‚Å–â‘è‚È‚­“®ì‚·‚éŽ–‚ð•Ûá‚·‚é‚à‚Ì‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
-@ŒÂl‚Ì”»’f‚É‚æ‚Á‚Ä‚²—˜—p‚­‚¾‚³‚¢B
+â—‡ å…è²¬ â—‡
+ã€€ä½œè€…ã¯ã€ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’åˆ©ç”¨ã—ãŸã“ã¨ã«ã‚ˆã£ã¦ç™ºç”Ÿã—ãŸã„ã‹ãªã‚‹å•é¡Œã«ã‚‚ã€è²¬ä»»ã‚’è² ã„ã¾ã›ã‚“ã€‚
+ã€€ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€ãƒ¦ãƒ¼ã‚¶ã®ãŠä½¿ã„ã®ç’°å¢ƒã§å•é¡Œãªãå‹•ä½œã™ã‚‹äº‹ã‚’ä¿éšœã™ã‚‹ã‚‚ã®ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
+ã€€å€‹äººã®åˆ¤æ–­ã«ã‚ˆã£ã¦ã”åˆ©ç”¨ãã ã•ã„ã€‚
 
-ž “]Ú ž
-@ “]Ú‚Í‚²Ž©—R‚É‚µ‚Ä‚¢‚½‚¾‚¢‚ÄŒ‹\‚Å‚·BìŽÒ‚É
+â—‡ è»¢è¼‰ â—‡
+ã€€ è»¢è¼‰ã¯ã”è‡ªç”±ã«ã—ã¦ã„ãŸã ã„ã¦çµæ§‹ã§ã™ã€‚ä½œè€…ã«
 
-ž FAQEŠù’m‚ÌƒoƒO ž
+â—‡ FAQãƒ»æ—¢çŸ¥ã®ãƒã‚° â—‡
 
 ----------
-ž ˜A—æ ž
+â—‡ é€£çµ¡å…ˆ â—‡
 	Web : https://github.com/kkato233/ken_all_mdb
 
